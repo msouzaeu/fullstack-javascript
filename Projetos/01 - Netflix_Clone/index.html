@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix</title>
     <style>
         
         * {
@@ -11,16 +11,40 @@
             padding: 0;
         }
 
-        #cabecalho {
-            background-color: red;
-            
+        body {
+                background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/42f3cd9f-c9a8-4cae-8c03-3e7aa13e0154/web/BR-pt-20260727-TRIFECTA-perspective_7ab34e99-f96a-4669-a032-6664aa5f6f75_large.jpg);        
+                background-size: cover;
+                background-position: top center; 
+                   
+        }
+
+        #cabecalho{
+           background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #cabecalho div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+
+                    
+        }
+
+
+        #cabecalho .menu {
+         padding: 15px;
+         font-size: 50px;   
+         text-transform: uppercase;
+         
+         
         }
 
 
         #cabecalho a{
-          font-size: 50px;
-          color: blue;
-          text-transform: uppercase;
+          color: white;
+          text-decoration: none;
+          font-family: sans-serif;
 
         }
 
@@ -28,12 +52,19 @@
 </head>
 
 <body>
-   <header id="cabecalho">
-    <div class="menu"> 
-        <a href="#" >Netflix</a>
     
-    </div>
+   <header id="cabecalho">
+    <div>
+       <h1 class="menu"> 
+           <a href="#" >Netflix</a>
+       
+       </h1>
+       <h2 class="menu"> 
+           <a href="#" >entrar</a>
+       
+       </h2>
+       </div>
+</header>
 
-   </header>
 </body>
 </html
