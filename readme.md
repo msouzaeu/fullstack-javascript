@@ -154,7 +154,6 @@ Node.js     ░░░░░░░░░░ 0%
 
 💼 LinkedIn: https://www.linkedin.com/in/mateus-souza-5883ba151/
 
-
 ---
 
 ⭐ Este repositório será atualizado constantemente conforme avanço nos estudos.
