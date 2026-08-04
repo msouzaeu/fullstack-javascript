@@ -1,46 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Site</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+       
+        body{
+          background-color: black;
+          color: white;
         }
 
-        
+        h2{
+          color : red;
+        }
+
+        section {
+            margin: 10px;
+            border: 2px solid #ccc;
+            padding: 0px 20px;
+        }
+
+        header a {
+          text-decoration: none;
+          color: white;
+          padding: 50px;
+        }
+
+        header{
+          margin-bottom: 30px;
+        }
+
+        nav ul{
+          list-style: none;
+          display: flex;
+         
+        }
+
+        nav a:hover{
+          color: red;
+
+        }
+
+        h1 {
+          font-size: 50px;
+          text-align: center;
+          padding: 20px;
+          color: red;
+        }
+
+        footer{
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        .redes {
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+          margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
 
-<nav>
+  <header>
+    <h1>Bem vindo ao meu site
+    <img src="https://img.icons8.com/color/1200/html-5.jpg" width="100px" height="100px"></h1>
 
-</nav>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Séries</a></li>
+        <li><a href="#">Aulas</a></li>
+        <li><a href="#">Mercado</a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+  <section class="sobre-mim">
+    <h2 class="titulo">Sobre Mim</h2>
+      <p>Meu nome é Mateus, tenho 29 anos e sou estudante de programação. Estou aprendendo a criar sites e aplicativos web. Meu objetivo é me tornar um desenvolvedor full stack e trabalhar em projetos desafiadores.</p>
+  </section>
 
-    <!-- Lista não ordenada -->
+<section>    
+  <h2 class="titulo">Lista de Compras</h2>
   <ul>
-    <li>Home</li>
-    <li>Sobre</li>
-    <li>Contato</li>
+    <li>Arroz</li>
+    <li>Carne</li>
+    <li>Macarrão</li>
+    <li>Farinha</li>
+    <li>Temperos</li>
+    <li>Biscoitos</li>
   </ul>
-   
-    <!-- Lista ordenada -->
-  <ol type="1">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+</section>
+
+<section>
+  <h2 class="titulo">Receita de sanduíche</h2>
+  <ol>
+    <li>Frite a carne de hamburguer</li>
+    <li>Coloque o queijo sobre a carne</li>
+    <li>Corte o pão ao meio e passe manteiga. Coloque para dourar</li> 
+    <li>Coloque a carne no pão e coloque o molho, queijo e presunto</li>
   </ol>
-  
-  <!-- Lista de definição -->
-   <dl>
-    <dt>Termo 1</dt>
-    <dd>Definição do termo 1</dd>
-    <dt>Termo 2</dt>
-    <dd>Definição do termo 2</dd>
-  </dl>
+</section>
+
+<section>
+  <h2 class="titulo">Meus Hobbies</h2>
+  <ul>
+    <li>Assistir filmes</li>
+    <li>Jogar video game</li>
+    <li>Ouvir música</li>
+    <li>Estudar programação</li>
+    <li>Dançar Forró</li>
+    <li>Treinar</li>
+    <li>Cozinhar</li>
+  </ul>
+</section>
+
+<div class="redes">
+    <a href="https://www.linkedin.com/in/mateus-souza-5883ba151/">Conheça meu perfil no LinkedIn</a> 
+    <a href="https://github.com/msouzaeu/fullstack-javascript">Conheça meu perfil no GitHub</a>
+</div>
+
+</main>
+<footer>
+  <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+</footer>
+   
 </body>
 </html>
