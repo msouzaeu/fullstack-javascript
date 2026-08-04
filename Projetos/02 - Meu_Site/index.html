@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista/Menus</title>
+    <title>Meu Site</title>
 
     <style>
        
@@ -36,6 +36,7 @@
           list-style: none;
           display: flex;
           
+         
         }
         
         nav{
@@ -55,12 +56,26 @@
           color: red;
         }
 
+        footer{
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        .redes {
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+          margin-top: 20px;
+        }
+
     </style>
 </head>
-
 <body>
 
   <header>
+    <h1>Bem vindo ao meu site
+    <img src="https://img.icons8.com/color/1200/html-5.jpg" width="100px" height="100px"></h1>
+
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -73,8 +88,14 @@
     </nav>
   </header>
 
-    <section>    
-  <h2 class="titulo">Lista não ordenada</h2>
+  <main>
+  <section class="sobre-mim">
+    <h2 class="titulo">Sobre Mim</h2>
+      <p>Meu nome é Mateus, tenho 29 anos e sou estudante de programação. Estou aprendendo a criar sites e aplicativos web. Meu objetivo é me tornar um desenvolvedor full stack e trabalhar em projetos desafiadores.</p>
+  </section>
+
+<section>    
+  <h2 class="titulo">Lista de Compras</h2>
   <ul>
     <li>Arroz</li>
     <li>Carne</li>
@@ -83,9 +104,21 @@
     <li>Temperos</li>
     <li>Biscoitos</li>
   </ul>
+</section>
 
-  <h2 class="titulo">Lista não ordenada com outro type</h2>
-  <ul type="square">
+<section>
+  <h2 class="titulo">Receita de sanduíche</h2>
+  <ol>
+    <li>Frite a carne de hamburguer</li>
+    <li>Coloque o queijo sobre a carne</li>
+    <li>Corte o pão ao meio e passe manteiga. Coloque para dourar</li> 
+    <li>Coloque a carne no pão e coloque o molho, queijo e presunto</li>
+  </ol>
+</section>
+
+<section>
+  <h2 class="titulo">Meus Hobbies</h2>
+  <ul>
     <li>Assistir filmes</li>
     <li>Jogar video game</li>
     <li>Ouvir música</li>
@@ -96,25 +129,15 @@
   </ul>
 </section>
 
-<section>
-  <h2 class="titulo">Lista ordenada</h2>
-  <ol>
-    <li>Frite a carne de hamburguer</li>
-    <li>Coloque o queijo sobre a carne</li>
-    <li>Corte o pão ao meio e passe manteiga. Coloque para dourar</li> 
-    <li>Coloque a carne no pão e coloque o molho, queijo e presunto</li>
-  </ol>
+<div class="redes">
+    <a href="https://www.linkedin.com/in/mateus-souza-5883ba151/">Conheça meu perfil no LinkedIn</a> 
+    <a href="https://github.com/msouzaeu/fullstack-javascript">Conheça meu perfil no GitHub</a>
+</div>
 
-  <h2 class="titulo">Lista ordenada com outro type</h2>
-  <ol type="A">
-    <li>Frite a carne de hamburguer</li>
-    <li>Coloque o queijo sobre a carne</li>
-    <li>Corte o pão ao meio e passe manteiga. Coloque para dourar</li> 
-    <li>Coloque a carne no pão e coloque o molho, queijo e presunto</li>
-  </ol>
-</section>
-
+</main>
+<footer>
+  <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+</footer>
+   
 </body>
 </html>
-
-
