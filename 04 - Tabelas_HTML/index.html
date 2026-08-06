@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+    <style>
+        body{
+            
+        }
+        table{
+            border-collapse: collapse;
+            font-family: sans-serif;
+            width: 100%;
+            
+        }
+        table th, table td{ 
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+    </style>
+<body>
+    
+    <table>
+
+        <!-- 
+        caption - Legenda da tabela
+        thead - Cabeçalho da tabela
+        tbody - Corpo da tabela
+         tr - Linha da tabela
+         th - Coluna do cabeçalho da tabela
+         td - Coluna do corpo da tabela
+         tfoot - Rodapé da tabela
+        -->
+
+        <thead> 
+            <caption>Descrição da Tabela</caption>
+            <tr> 
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Mateus</td>
+                <td>29</td>
+                <td>Forrozeiro e dev</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td colspan="2">José</td>
+                <td>Pintor</td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <th>Rodapé da tabela</th>
+                </tr>
+            </tfoot>
+        </tbody>
+            
+
+    </table>
+</body>
+</html>

@@ -68,6 +68,36 @@
           margin-top: 20px;
         }
 
+        table{
+          margin-top: 30px;
+          border-collapse: collapse;
+          width: 100%; 
+          text-align: left; 
+        }
+
+        table caption {
+          font-weight: bold; 
+          margin-bottom: 10px; 
+        }
+        table td, table th {
+          border: 1px solid #ccc;
+          padding: 10px;
+        }
+
+        table tfoot td {
+          text-align: center; 
+          font-weight: bold; 
+        }
+
+        table .sim {
+          color: green; 
+          font-weight: bold; 
+        }
+
+        table .nao{
+          color: red; 
+          font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -129,12 +159,56 @@
   </ul>
 </section>
 
+<table>
+  <caption>Lista de Compras</caption>
+  <tr> 
+    <th>Produto</th>
+    <th>Quantidade</th>
+    <th>Preço</th>
+    <th>Disponível</th>
+  </tr>
+  <tr>
+    <td>Arroz</td>
+    <td>5kg</td>
+    <td>R$ 20,00</td>
+    <td class="sim">Sim</td>  
+  </tr>
+  <tr>
+    <td>Carne</td>
+    <td>2kg</td>
+    <td>R$ 50,00</td>
+    <td class="nao">Não</td>
+  </tr>
+  <tr>
+    <td>Macarrão</td>
+    <td>3 pacotes</td>
+    <td>R$ 15,00</td>
+    <td class="sim">Sim</td>
+  </tr>
+  <tr>
+    <td>Farinha</td>
+    <td>1kg</td>
+    <td>R$ 5,00</td>
+    <td class="sim">Sim</td>  
+  </tr>  
+  <tfoot>
+    <tr>
+      <td colspan="4">Fim da lista de compras</td>
+    </tr>
+</table>
+
 <div class="redes">
     <a href="https://www.linkedin.com/in/mateus-souza-5883ba151/">Conheça meu perfil no LinkedIn</a> 
     <a href="https://github.com/msouzaeu/fullstack-javascript">Conheça meu perfil no GitHub</a>
 </div>
 
 </main>
+
+
+
+
+
+
 <footer>
   <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
 </footer>
