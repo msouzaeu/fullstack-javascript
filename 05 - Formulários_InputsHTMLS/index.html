@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario e InputsHTML</title>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+
+        <p>Criando Formulario</p>
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+            <label>Sobrenome</label><br>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+        </p>
+
+        <p>
+            <label for="dtnasc">Data de Nascimento</label><br>
+            <input type="date" id="dtnasc" name="dtnasc">
+
+        </p>        
+
+        <p> 
+            <label for="email">Digite seu email</label><br>
+            <input type="email" id="email" name="email" placeholder="teste@email.com.br" >
+        </p> 
+
+        <p>
+            Estado Civil:<br>
+            <label for="solteiro">Solteiro</label>
+            <input type="radio" name="relacionamento" id="solteiro" value="solteiro"><br>
+            <label for="casado">Casado</label>
+            <input type="radio" name="relacionamento" id="casado" value="casado"><br>
+            <label for="namorando">Namorando</label>
+            <input type="radio" name="relacionamento" id="namorando" value="namorando">
+        </p>
+
+        <p>
+            O que você sabe?:<br><br>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="html" id="html" value="sim" checked><br>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" id="css" value="sim"><br>
+            <label for="js">JS</label>
+            <input type="checkbox" name="js" id="js" value="sim"><br>
+            <label for="sql">SQL</label>    
+            <input type="checkbox" name="sql" id="sql" value="sim"><br>
+        </p>
+
+        <p>
+            <label for="telefone">Digite seu telefone</label><br>
+            <input type="tel" name="telefone" id="telefone" >
+        </p>
+
+        <p>
+            <label for="number">Digite sua idade</label><br>
+            <input type="number" name="number" id="number" min="18" max="60">
+        </p>
+
+        <p>
+            <label for="senha">Digite sua senha</label><br>
+            <input type="password" senha="" id="senha">
+        </p>
+
+        <p>
+            <label for="link">Informe seu link</label><br>
+            <input type="url" name="link" id="link">
+        </p>
+
+        <p>
+            <label for="selecione">Selecione uma opção</label><br>
+            <select name="selecione" id="selecione">
+                <option value="escolha 1">escolha 1</option>
+                <option value="escolha 2" disabled>escolha 2</option>
+                <option value="escolha 3">escolha 3</option>
+                <option value="escolha 4">escolha 4</option>
+            </select>
+
+        </p>
+
+        <p>
+            <label for="descricao">Descreva sua ideia:</label><br>
+            <textarea name="descricao" id="descricao"></textarea>
+        </p>
+
+        <p> 
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+    </form>
+</body>
+</html>
