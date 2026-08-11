@@ -38,11 +38,12 @@ Cada módulo representa um novo passo na minha evolução.
 - [x] Box Model
 - [x] Listas
 - [x] Menus
+- [x] Tabelas
 - [ ] Formulários
-- [ ] Tabelas
 
 ## CSS
 
+- [x] Box Model
 - [ ] Seletores
 - [ ] Flexbox
 - [ ] Grid
@@ -90,11 +91,14 @@ Cada módulo representa um novo passo na minha evolução.
 ```text
 📁 CURSO-JS
 
-├── 📁 01-html-basico
-├── 📁 02-box-model
-├── 📁 03-listas-menus
-├── 📁 04-projetos
+├── 📁 01-html_basico
+├── 📁 02-box_model
+├── 📁 03-listas_menus
+├── 📁 04-tabelas_html
+├── 📁 05-formulários_inputsHTMLS
+├── 📁 projetos
 │   └── netflix-clone
+│   └── meu_site
 └── README.md
 ```
 
@@ -105,6 +109,7 @@ Cada módulo representa um novo passo na minha evolução.
 | Projeto | Status |
 |----------|--------|
 | Netflix Clone | 🚧 Em desenvolvimento |
+| Meu Site | 🚧 Em desenvolvimento |
 
 ---
 
@@ -123,7 +128,7 @@ Cada módulo representa um novo passo na minha evolução.
 # 📈 Evolução
 
 ```
-HTML        ██░░░░░░░░ 20%
+HTML        ███░░░░░░░ 30%
 
 CSS         ░░░░░░░░░░ 0%
 
@@ -146,7 +151,9 @@ Node.js     ░░░░░░░░░░ 0%
 
 ✅ Menus de Navegação
 
-🚧 Próximo módulo: Flexbox
+✅ Tabela
+
+🚧 Próximo módulo: Formulários e Inputs HTML 
 
 ---
 
