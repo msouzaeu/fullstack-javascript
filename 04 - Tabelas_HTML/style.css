@@ -1,0 +1,13 @@
+body{
+            
+        }
+        table{
+            border-collapse: collapse;
+            font-family: sans-serif;
+            width: 100%;
+            
+        }
+        table th, table td{ 
+            border: 1px solid #ccc;
+            padding: 10px;
+        }

@@ -1,0 +1,47 @@
+ body{
+          background-color: black;
+          color: white;
+        }
+
+        h2{
+          color : red;
+        }
+
+        section {
+            margin: 10px;
+            border: 2px solid #ccc;
+            padding: 0px 20px;
+        }
+
+        header a {
+          text-decoration: none;
+          color: white;
+          padding: 0px 50px;
+        }
+
+        header{
+          margin-bottom: 30px;
+        }
+
+        nav ul{
+          list-style: none;
+          display: flex;
+          
+        }
+        
+        nav{
+          background-color: blue;
+          padding: 10px;
+        }
+
+        nav a:hover{
+          color: red;
+
+        }
+
+        h1 {
+          font-size: 50px;
+          text-align: center;
+          padding: 0px;
+          color: red;
+        }

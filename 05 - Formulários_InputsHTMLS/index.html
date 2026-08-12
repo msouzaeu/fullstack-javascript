@@ -3,92 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario e InputsHTML</title>
+    <title>Pratica</title>
 </head>
 <body>
-    <form action="#" method="get" target="_blank">
-
-        <p>Criando Formulario</p>
-        <p>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
-            <label>Sobrenome</label><br>
-            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
-        </p>
-
-        <p>
-            <label for="dtnasc">Data de Nascimento</label><br>
-            <input type="date" id="dtnasc" name="dtnasc">
-
-        </p>        
-
-        <p> 
-            <label for="email">Digite seu email</label><br>
-            <input type="email" id="email" name="email" placeholder="teste@email.com.br" >
-        </p> 
-
-        <p>
-            Estado Civil:<br>
-            <label for="solteiro">Solteiro</label>
-            <input type="radio" name="relacionamento" id="solteiro" value="solteiro"><br>
-            <label for="casado">Casado</label>
-            <input type="radio" name="relacionamento" id="casado" value="casado"><br>
-            <label for="namorando">Namorando</label>
-            <input type="radio" name="relacionamento" id="namorando" value="namorando">
-        </p>
-
-        <p>
-            O que você sabe?:<br><br>
-            <label for="html">HTML</label>
-            <input type="checkbox" name="html" id="html" value="sim" checked><br>
-            <label for="css">CSS</label>
-            <input type="checkbox" name="css" id="css" value="sim"><br>
-            <label for="js">JS</label>
-            <input type="checkbox" name="js" id="js" value="sim"><br>
-            <label for="sql">SQL</label>    
-            <input type="checkbox" name="sql" id="sql" value="sim"><br>
-        </p>
-
-        <p>
-            <label for="telefone">Digite seu telefone</label><br>
-            <input type="tel" name="telefone" id="telefone" >
-        </p>
-
-        <p>
-            <label for="number">Digite sua idade</label><br>
-            <input type="number" name="number" id="number" min="18" max="60">
-        </p>
-
-        <p>
-            <label for="senha">Digite sua senha</label><br>
-            <input type="password" senha="" id="senha">
-        </p>
-
-        <p>
-            <label for="link">Informe seu link</label><br>
-            <input type="url" name="link" id="link">
-        </p>
-
-        <p>
-            <label for="selecione">Selecione uma opção</label><br>
-            <select name="selecione" id="selecione">
-                <option value="escolha 1">escolha 1</option>
-                <option value="escolha 2" disabled>escolha 2</option>
-                <option value="escolha 3">escolha 3</option>
-                <option value="escolha 4">escolha 4</option>
-            </select>
-
-        </p>
-
-        <p>
-            <label for="descricao">Descreva sua ideia:</label><br>
-            <textarea name="descricao" id="descricao"></textarea>
-        </p>
-
-        <p> 
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetar</button>
-        </p>
+    
+    <form action="#">
+        
+            <h1>Formulário de Cadastro</h1>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="email@email.com"><br>
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+                    
     </form>
+
+    <form action="#">
+
+        <h1>Formulário de Contato</h1>
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="telefone">Telefone </label><br>
+        <input type="tel" name="telefone" id="telefone"><br>
+        <label for="assunto">Assunto</label><br>
+        <input type="text" name="assunto" id="assunto"><br>
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="mensagem" id="mensagem"></textarea><br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <form action="#">
+
+        <H1>Formulário de Pesquisa</H1>
+        <p>Qual seu nível de programação?</p>
+        <label for="iniciante">Iniciante</label>
+        <input type="radio" name="nivel" id="iniciante" value="iniciante"><br>
+        <label for="intermediario">Intermediario</label>
+        <input type="radio" name="nivel" id="intermediario" value="intermediario"><br>
+        <label for="avançado">Avançado</label>
+        <input type="radio" name="nivel" id="avançado" value="avançado"><br>
+       
+        <p>Qual linguagem você está estudando?</p>
+        <label for="css">CSS</label>
+        <input type="checkbox" name="linguagem" id="css" value="css"><br>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="linguagem" id="html" value="html"><br>
+        <label for="js">JS</label>
+        <input type="checkbox" name="linguagem" id="js" value="js"><br>
+        <label for="sql">SQL</label>
+        <input type="checkbox" name="linguagem" id="sql" value="sql"><br>
+        
+        <p>Qual área você prefere?</p>
+        <label for="front-end">Front-end</label>
+        <input type="radio" name="area" id="front-end" value="front-end"><br>
+        <label for="back-end">Back-end</label>
+        <input type="radio" name="area" id="back-end" value="back-end"><br>
+        <label for="full-stack">Full Stack</label>
+        <input type="radio" name="area" id="full-stack" value="full-stack"><br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="Limpar">
+
+        <p><label for="pretensao-salarial">Pretensão salarial:</label></p>
+        <select name="pretensao-salarial" id="pretensao-salarial">
+            <option value="">Selecione um valor</option>
+            <option value="1000">R$ 1.000</option>
+            <option value="2000">R$ 2.000</option>
+            <option value="3000">R$ 3.000</option>
+        </select>
+
+    </form>
+
+    
+   
 </body>
 </html>
