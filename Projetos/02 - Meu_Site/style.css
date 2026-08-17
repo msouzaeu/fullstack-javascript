@@ -1,93 +1,173 @@
+/* =========================
+   GERAL
+========================= */
 
-        body{
-          background-color: black;
-          color: white;
-        }
+body {
+  background-color: darkcyan;
+  color: white;
+}
 
-        h2{
-          color : red;
-        }
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: greenyellow;
+}
 
-        section {
-            margin: 10px;
-            border: 2px solid #ccc;
-            padding: 0px 20px;
-        }
+h2 {
+  color: greenyellow;
+}
 
-        header a {
-          text-decoration: none;
-          color: white;
-          padding: 0px 50px;
-        }
 
-        header{
-          margin-bottom: 30px;
-        }
+/* =========================
+   HEADER
+========================= */
 
-        nav ul{
-          list-style: none;
-          display: flex;
-          
-         
-        }
-        
-        nav{
-          background-color: blue;
-          padding: 10px;
-        }
+header {
+  margin-bottom: 30px;
+}
 
-        nav a:hover{
-          color: red;
+header a {
+  text-decoration: none;
+  color: white;
+}
 
-        }
 
-        h1 {
-          font-size: 50px;
-          text-align: center;
-          padding: 0px;
-          color: red;
-        }
+/* =========================
+   MENU
+========================= */
 
-        footer{
-          text-align: center;
-          margin-top: 30px;
-        }
-
-        .redes {
-          display: flex; 
-          flex-direction: column; 
-          align-items: center; 
-          margin-top: 20px;
-        }
-
-        table{
-          margin-top: 30px;
-          border-collapse: collapse;
-          width: 100%; 
-          text-align: left; 
-        }
-
-        table caption {
-          font-weight: bold; 
-          margin-bottom: 10px; 
-        }
-        table td, table th {
-          border: 1px solid #ccc;
-          padding: 10px;
-        }
-
-        table tfoot td {
-          text-align: center; 
-          font-weight: bold; 
-        }
-
-        table .sim {
-          color: green; 
-          font-weight: bold; 
-        }
-
-        table .nao{
-          color: red; 
-          font-weight: bold;
-        }
+#menu {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 104, 44);
   
+}
+
+#menu li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#menu a {
+  padding: 0 50px;
+}
+
+#menu li:hover {
+  background-color: darkorchid;
+}
+
+#menu li:hover a {
+  color: darkcyan;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+  margin: 10px;
+  border: 2px solid #ccc;
+  padding: 0 20px;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobbies li:first-child {
+  color: green;
+}
+
+.hobbies li:last-child {
+  color: blue;
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table td,
+table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table tfoot td {
+  text-align: center;
+  font-weight: bold;
+}
+
+table .sim {
+  color: green;
+  font-weight: bold;
+}
+
+table .nao {
+  color: red;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #cccccc62;
+}
+
+table tbody tr:nth-child(odd) td{
+  color: rgb(4, 21, 255);
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+input:focus,
+textarea:focus {
+  background-color: greenyellow;
+}
+
+input:checked {
+  accent-color: green;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+.redes a:hover {
+  color: greenyellow;
+}

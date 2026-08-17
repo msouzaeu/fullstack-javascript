@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+  -------------------------------------- SELETORES HTML --------------------------------------
+
+Seletor	                                Significa	                               Exemplo
+p	                                   Pela tag	                             p { color: red; }
+.titulo	                               Pela class	                   .titulo { color: red; }
+#menu	                               Pelo id	                         #menu { color: red; }
+*	                                   Todos os elementos	                  * { margin: 0; }
+section p	                           p que está dentro de section	              section p {}
+section > p	                           p que é filho direto de                  section > p {}
+h1, h2	                          Seleciona os dois	                                 h1, h2 {}
+a:hover	                         a quando passa o mouse	                            a:hover {}
++                          irmão adjacente, próximo elemento imediato                h1 + p {}
+~                               irmão geral, todos os elementos irmãos               h1 ~ p {}
+^=                                      começa com                                       ^= {}
+$=                                      termina com                                      $= {}
+*=                                      contém                                           *= {}
+
+  -------------------------------------- PSEUDO CLASSES --------------------------------------
+
+
+:hover       → mouse em cima
+:focus       → elemento focado
+:checked     → marcado
+:first-child → primeiro filho
+:last-child  → último filho
+:nth-child   → posição
+:not         → seletor de negação   
+
+*/ 
+
+
+section {
+    border: 1px solid black;
+    margin: 20px 0px;
+    background-color: azure;
+}
+
+
+.cabeca {
+    color: red;
+    background-color: blueviolet;
+}
+
+.cabeca:focus {
+    color: blue;
+    background-color: black;
+}
+
+#corpo {
+    background-color: rgb(204, 136, 136);
+}
+
+.corpo p:not(.teste) {
+    color: blue;
+    background-color: cornflowerblue;
+
+}
+
+.corpo h2 {
+    color: green;
+    background-color: red;
+}
+
+div h3 {
+    color: blueviolet;
+}
+
+footer {
+    color: black;
+}
+
+input:focus{
+    box-shadow: 0 0 5px black;
+    outline: none;
+    
+}
+
+input:checked{
+    color: rebeccapurple;
+}
+
+
+.teste:nth-child(2n){
+    background-color: darkcyan;
+}
+
+button:hover{
+    background-color: darkorchid;
+    color: darkcyan;
+
+}
