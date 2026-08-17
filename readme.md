@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Foco-Full%20Stack-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/JavaScript-Em%20Breve-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
 ---
@@ -12,49 +12,82 @@
 
 Olá! Sou **Mateus Souza**.
 
-Este repositório faz parte da minha jornada para me tornar um **Desenvolvedor Full Stack JavaScript**.
+Este repositório documenta minha jornada de estudos em **Desenvolvimento Full Stack JavaScript**.
 
-Meu objetivo é documentar toda a evolução dos estudos, compartilhar projetos práticos e construir um portfólio sólido enquanto aprendo.
+Aqui registro os conteúdos que estou aprendendo, exercícios desenvolvidos durante os estudos e projetos utilizados para colocar os conhecimentos em prática.
 
-Cada módulo representa um novo passo na minha evolução.
+O objetivo é acompanhar minha evolução, consolidar o aprendizado através da prática e construir gradualmente meu portfólio como desenvolvedor.
 
 ---
 
 # 🎯 Objetivos
 
-- 📚 Aprender HTML, CSS e JavaScript
-- ⚛️ Estudar React
-- 🌐 Aprender Node.js
-- 🛠️ Construir projetos reais
-- 💼 Conquistar minha primeira oportunidade como Desenvolvedor Full Stack
+- 📚 Construir uma base sólida em HTML, CSS e JavaScript
+- 💻 Aplicar os conhecimentos através de exercícios e projetos
+- ⚛️ Avançar futuramente para React
+- 🟢 Aprender Node.js e desenvolvimento Back-end
+- 🛠️ Desenvolver aplicações Full Stack
+- 🐙 Utilizar Git e GitHub durante todo o processo
+- 💼 Construir um portfólio para oportunidades na área de desenvolvimento
 
 ---
 
 # 🚀 Roadmap
 
-## HTML
+## 🌐 HTML
 
-- [x] Estrutura básica
-- [x] Box Model
-- [x] Listas
+- [x] Estrutura básica do HTML
+- [x] HTML semântico
+- [x] Listas ordenadas e não ordenadas
+- [x] Links e navegação
 - [x] Menus
 - [x] Tabelas
-- [ ] Formulários
+- [x] Formulários
+- [x] Labels
+- [x] Inputs
+- [x] Radio buttons
+- [x] Checkboxes
+- [x] Textarea
+- [x] Select e Option
 
-## CSS
+## 🎨 CSS
+
+### Fundamentos
 
 - [x] Box Model
-- [ ] Seletores
-- [ ] Flexbox
-- [ ] Grid
-- [ ] Responsividade
-- [ ] Animações
+- [x] Margin
+- [x] Padding
+- [x] Border
+- [x] Seletores básicos
+- [x] Seletor por elemento
+- [x] Seletor por classe
+- [x] Seletor por ID
+- [x] Seletores descendentes
+- [x] Seletores de filho direto
+- [x] Seletores de atributos
+- [x] Pseudo-classes
+- [x] `:hover`
+- [x] `:first-child`
+- [x] `:nth-child()`
 
-## JavaScript
+### Layout e estilização
+
+- [x] Flexbox básico
+- [x] `justify-content`
+- [x] `align-items`
+- [x] `flex-direction`
+- [ ] Pseudo-elementos
+- [ ] CSS Grid
+- [ ] Responsividade
+- [ ] Media Queries
+- [ ] Transições e animações
+
+## ⚡ JavaScript
 
 - [ ] Variáveis
+- [ ] Tipos de dados
 - [ ] Operadores
-- [ ] Condições
+- [ ] Condicionais
 - [ ] Loops
 - [ ] Funções
 - [ ] Arrays
@@ -62,26 +95,38 @@ Cada módulo representa um novo passo na minha evolução.
 - [ ] DOM
 - [ ] Eventos
 - [ ] Fetch API
+- [ ] Programação assíncrona
 
-## Git e GitHub
+## 🐙 Git e GitHub
 
-- [ ] Git básico
+- [x] Criar um repositório
+- [x] Inicializar um projeto com Git
+- [x] Adicionar arquivos ao versionamento
+- [x] Criar commits
+- [x] Conectar repositório local ao GitHub
+- [x] Push para repositório remoto
+- [x] Pull básico
 - [ ] Branches
-- [ ] Pull Request
+- [ ] Merge
+- [ ] Pull Requests
 
-## React
+## ⚛️ React
 
 - [ ] Componentes
 - [ ] Props
 - [ ] State
 - [ ] Hooks
 - [ ] React Router
+- [ ] Consumo de APIs
 
-## Node.js
+## 🟢 Node.js
 
+- [ ] Fundamentos do Node.js
+- [ ] NPM
 - [ ] Express
 - [ ] API REST
 - [ ] Banco de Dados
+- [ ] Autenticação
 - [ ] JWT
 
 ---
@@ -89,78 +134,118 @@ Cada módulo representa um novo passo na minha evolução.
 # 📂 Estrutura do repositório
 
 ```text
-📁 CURSO-JS
-
+📁 fullstack-javascript
+│
 ├── 📁 01-html_basico
 ├── 📁 02-box_model
 ├── 📁 03-listas_menus
 ├── 📁 04-tabelas_html
-├── 📁 05-formulários_inputsHTMLS
+├── 📁 05-formularios_inputs
+├── 📁 06-seletores_css
+│
 ├── 📁 projetos
-│   └── netflix-clone
-│   └── meu_site
+│   ├── 📁 netflix-clone
+│   └── 📁 meu-site
+│
 └── README.md
 ```
+
+> 📌 A estrutura é atualizada conforme novos conteúdos e projetos são desenvolvidos.
 
 ---
 
 # 📚 Projetos
 
-| Projeto | Status |
-|----------|--------|
-| Netflix Clone | 🚧 Em desenvolvimento |
-| Meu Site | 🚧 Em desenvolvimento |
+| Projeto | Tecnologias | Status |
+|---|---|---|
+| 🎬 Netflix Clone | HTML / CSS | 🚧 Em desenvolvimento |
+| 🌐 Meu Site | HTML / CSS | 🚧 Em desenvolvimento |
+
+Novos projetos serão adicionados conforme avanço nos estudos.
 
 ---
 
-# 🛠️ Tecnologias
+# 🛠️ Tecnologias e ferramentas
+
+### Atualmente estudando e utilizando
 
 <p>
-<img src="https://skillicons.dev/icons?i=html" height="45">
-<img src="https://skillicons.dev/icons?i=css" height="45">
-<img src="https://skillicons.dev/icons?i=js" height="45">
-<img src="https://skillicons.dev/icons?i=git" height="45">
-<img src="https://skillicons.dev/icons?i=github" height="45">
+  <img src="https://skillicons.dev/icons?i=html" height="45" alt="HTML">
+  <img src="https://skillicons.dev/icons?i=css" height="45" alt="CSS">
+  <img src="https://skillicons.dev/icons?i=git" height="45" alt="Git">
+  <img src="https://skillicons.dev/icons?i=github" height="45" alt="GitHub">
+  <img src="https://skillicons.dev/icons?i=vscode" height="45" alt="VS Code">
+</p>
+
+### Próximas tecnologias
+
+<p>
+  <img src="https://skillicons.dev/icons?i=js" height="45" alt="JavaScript">
+  <img src="https://skillicons.dev/icons?i=react" height="45" alt="React">
+  <img src="https://skillicons.dev/icons?i=nodejs" height="45" alt="Node.js">
 </p>
 
 ---
 
-# 📈 Evolução
+# 📈 Evolução atual
 
+```text
+HTML        █████████░ 90%
+CSS         █████░░░░░ 50%
+JavaScript  ░░░░░░░░░░  0%
+React       ░░░░░░░░░░  0%
+Node.js     ░░░░░░░░░░  0%
 ```
-HTML        ███░░░░░░░ 30%
 
-CSS         ░░░░░░░░░░ 0%
-
-JavaScript  ░░░░░░░░░░ 0%
-
-React       ░░░░░░░░░░ 0%
-
-Node.js     ░░░░░░░░░░ 0%
-```
+> Os percentuais representam apenas uma visão aproximada do progresso dentro do meu roadmap de estudos.
 
 ---
 
-# 📅 Últimas atualizações
+# 📅 Últimos conteúdos estudados
 
-✅ HTML Básico
+✅ Formulários e Inputs HTML
 
-✅ Box Model
+✅ Labels, Radio Buttons e Checkboxes
 
-✅ Listas HTML
+✅ Select, Option e Textarea
 
-✅ Menus de Navegação
+✅ Seletores básicos CSS
 
-✅ Tabela
+✅ Seletores de classe, ID e elementos
 
-🚧 Próximo módulo: Formulários e Inputs HTML 
+✅ Seletores descendentes e filhos diretos
+
+✅ Seletores de atributos
+
+✅ Pseudo-classes
+
+✅ `:hover`, `:first-child` e `:nth-child()`
+
+✅ Fundamentos de Flexbox
+
+---
+
+# 🎯 Próximos passos
+
+🚧 Pseudo-elementos
+
+⬜ Aprofundamento em Flexbox
+
+⬜ CSS Grid
+
+⬜ Responsividade
+
+⬜ JavaScript
 
 ---
 
 # 📬 Contato
 
-💼 LinkedIn: https://www.linkedin.com/in/mateus-souza-5883ba151/
+💼 **LinkedIn:**  
+[Mateus Souza](https://www.linkedin.com/in/mateus-souza-5883ba151/)
 
 ---
 
-⭐ Este repositório será atualizado constantemente conforme avanço nos estudos.
+<p align="center">
+  💻 <strong>Estudando, praticando e evoluindo um commit de cada vez.</strong> 🚀
+</p>
