@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<STYle> * {
-    margin: 0;
-    padding: 0;}
-    
-     .section-one{
-        background-image: url(https://tse3.mm.bing.net/th/id/OIP.tP48ley6oTALWO1qIDPLfwHaEp?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
-        background-size: cover;
-        background-position: center;
-        width: 400px;
-        height: 200px;
-       border: 5px solid black;
-       padding: 5px;
-       margin: 20px;
-       color: white;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-              
-    }
-    .section-two{
-        background-color: chocolate;
-        width: 400px;
-        height: 200px;
-       border: 5px solid black;
-       padding: 5px;
-       margin: 20px;
-    }
-
-    
-    .section-tree{
-      box-sizing: border-box;
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDdkRTFkVlXd6btTevpAfNQ1DyTFwlhRHNAMtH7VTJQ&s=10);
-      background-size:cover ;
-      border-top-color: red;
-      border-top-width: 1px;
-      border-left-color: blue;
-      border-left-width: 20px;
-      border-right-color: orange;
-      border-right-width: 30px;
-      border-bottom-color: greenyellow;
-      border-bottom-width: 40px;
-      border-style: solid;
-      background-color: violet;
-      width: 400px;
-      height: 200px;
-      margin: 25px;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
-    </STYle>
-
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="menu-li"><a href="#cor1">cor1</a></li>
+            <li class="menu-li"><a href="#cor2">cor2</a></li>
+            <li class="menu-li"><a href="#cor3">cor3</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
- <section class="section-one">Testando imagem dentro da box e suas propriedades</section>
-<section class="section-two"></section>
-<section class="section-tree">Testando box model com imagem e ajustes de bordas</section>
+    <div class="div-one">Testando imagem dentro da box e suas propriedades</div>
+    <div class="div-two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis sint deserunt nisi minus velit at? Quisquam esse nemo deleniti cum expedita dignissimos, commodi iure ex autem provident temporibus dicta!</div>
+    <div class="div-tree">Testando box model com imagem e ajustes de bordas</div>
+
+<div class="grid">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+</div>
+
+<!-- --------------------------------PRATICA--------------------------->
+
+EXERCICIO 1
+<div class="caixa">Estou praticando CSS</div>
+
+EXERCICIO 2
+
+<div class="lista-pratica">
+    <ul class="lista-pratica-ul">
+    <li class="lista-pratica-li">HTML</li>
+    <li class="lista-pratica-li">CSS</li>
+    <li class="lista-pratica-li">JS</li>
+    <li class="lista-pratica-li">Git</li>
+    <li class="lista-pratica-li">SQL</li>
+    </ul>
+</div>
+
+EXERCICIO 3
+
+<div class="pratica3">
+    <br><h2 class="titulo">Meus Estudos</h2>
+    <p class="pratica3-p">Estou aprendendo desenvolvimento web.</p>
+</div>
+
+
+<!-- --------------------------------PRATICA--------------------------->
+
+<div id="cor1" class="pai cor1">
+    <div></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, cupiditate similique recusandae distinctio quas eos animi adipisci non neque cum magni dolores, veritatis voluptate labore? Numquam veritatis accusantium facere ea.</p>
+
+</div>
+<div id="cor2" class="pai cor2">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, cupiditate similique recusandae distinctio quas eos animi adipisci non neque cum magni dolores, veritatis voluptate labore? Numquam veritatis accusantium facere ea.</p>
+
+</div>
+<div id="cor3" class="pai cor3">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, cupiditate similique recusandae distinctio quas eos animi adipisci non neque cum magni dolores, veritatis voluptate labore? Numquam veritatis accusantium facere ea.</p>
+
+</div>
 </body>
+
 </html>

@@ -21,18 +21,7 @@ a:hover	                         a quando passa o mouse	                        
 $=                                      termina com                                      $= {}
 *=                                      contém                                           *= {}
 
-  -------------------------------------- PSEUDO CLASSES --------------------------------------
-
-
-:hover       → mouse em cima
-:focus       → elemento focado
-:checked     → marcado
-:first-child → primeiro filho
-:last-child  → último filho
-:nth-child   → posição
-:not         → seletor de negação   
-
-*/ 
+ */
 
 
 section {
@@ -75,6 +64,20 @@ footer {
     color: black;
 }
 
+/*
+-------------------------------------- PSEUDO CLASSES --------------------------------------
+
+
+:hover       → mouse em cima
+:focus       → elemento focado
+:checked     → marcado
+:first-child → primeiro filho
+:last-child  → último filho
+:nth-child   → posição
+:not         → seletor de negação   
+
+*/ 
+
 input:focus{
     box-shadow: 0 0 5px black;
     outline: none;
@@ -94,4 +97,35 @@ button:hover{
     background-color: darkorchid;
     color: darkcyan;
 
+}
+
+.teste:first-child{
+    color: red;
+}
+
+.teste:last-child{
+    color: purple;
+}
+/* 
+-------------------------------------- PSEUDO ELEMENTOS --------------------------------------
+
+
+::first-line- Formate a primeira linha de texto
+::first-letter- Estilize a primeira letra do texto
+::before- Inserir conteúdo antes de um elemento
+::after- Inserir conteúdo após um elemento
+::marker- Marcadores de itens de lista de estilo
+::selection- Estilizar texto selecionado pelo usuário
+::backdrop- Estilo de fundo de diálogo
+::placeholder- O texto de exemplo em um campo de entrada.
+
+
+*/ 
+
+.teste::after{
+content: ' - ';
+}
+
+.p1::first-letter{
+    font-size: 50px;
 }

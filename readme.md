@@ -249,11 +249,3 @@ Node.js     ░░░░░░░░░░  0%
 
 <p align="center">
   💻 <strong>Estudando, praticando e evoluindo um commit de cada vez.</strong> 🚀
-<<<<<<< HEAD
-</p>
-=======
-</p>
->>>>>>> 169cb54d98eae0435409c2f36317bdc4cd915f98
-=======
-
->>>>>>> f2b6b8505e70cec6115b6f03cca00bff9d70ad6d

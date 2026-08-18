@@ -1,0 +1,206 @@
+
+  
+  /*   
+  
+  display (inline, block, grid, flex)
+  float 
+  overflow 
+  max/min height/width 
+  margin 
+  padding
+  border
+  box-sizing
+  cores 
+  unidades de medidas css (px, rem, em, vw, vh, %, vmax, vmin)
+  scroll-behavior: smooth
+
+  */
+  html{
+    scroll-behavior: smooth;
+ 
+
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      
+  }
+
+  .div-one, .div-two, .div-tree {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 200px;
+      margin: 25px;
+      padding: 15px;
+      text-align: center;
+      
+  }
+
+  .div-one {
+      background-image: url(https://tse3.mm.bing.net/th/id/OIP.tP48ley6oTALWO1qIDPLfwHaEp?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+      background-size: cover;
+      background-position: center;
+      border: 5px solid black;
+      color: white;
+
+
+  }
+
+  .div-two {
+      background-color: chocolate;
+      border: 5px solid black;
+      
+  }
+
+
+  .div-tree {
+      box-sizing: border-box;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDdkRTFkVlXd6btTevpAfNQ1DyTFwlhRHNAMtH7VTJQ&s=10);
+      background-size: cover;
+      border-top-color: red;
+      border-top-width: 1px;
+      border-left-color: blue;
+      border-left-width: 20px;
+      border-right-color: orange;
+      border-right-width: 30px;
+      border-bottom-color: greenyellow;
+      border-bottom-width: 40px;
+      border-style: solid;
+      background-color: violet;
+      
+  }
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.grid .col{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: blue;   
+
+}
+.pai{
+    width: 100%;
+    height: 100vh;
+}
+.pai > div{
+    width: 50%;
+    height: 500px;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+
+}
+.menu-li{
+    background-color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+.cor1{
+    background-color: brown;
+}
+.cor2{
+    background-color: turquoise;
+}
+.cor3{
+    background-color: purple;
+}
+
+
+/*----------------------------------PRATICA---------------------------*/
+
+/*EXERCICIO 1*/
+
+
+
+.caixa{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*EXERCICIO 2*/
+
+
+
+.lista-pratica-ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.lista-pratica-li{
+    padding: 15px;
+    list-style: none;
+}
+
+.lista-pratica-li:first-child{
+   color: green;
+}
+
+.lista-pratica-li:last-child{
+   color: red;
+}
+
+.lista-pratica-li:nth-child(3){
+   color: purple;
+}
+
+.lista-pratica-li:nth-child(even){
+   background: darkgrey;
+}
+
+.lista-pratica-li:hover{
+    
+  transform: scale(1.1); /*amplia o item visualmente sem alterar o espaço que ele ocupa no layout da págin*/
+}
+
+/*EXERCICIO 3*/
+
+.pratica3{
+    display: block;
+    text-align: center;
+}
+
+.titulo::before{
+    content: '💻 ';
+}
+
+.pratica3-p::after{
+    content: ' ✓';
+}
+
+.pratica3-p::first-letter{
+    font-size: 50px;
+}
+
+.pratica3-p::first-line{
+    color: darkorange;    
+}
