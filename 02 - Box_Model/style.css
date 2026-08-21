@@ -18,8 +18,8 @@
   html{
     scroll-behavior: smooth;
  
-
   }
+
   * {
       margin: 0;
       padding: 0;
@@ -73,17 +73,13 @@
   }
 
 .grid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+  gap: 20px;  
 }
 .grid .col{
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    background-color: blue;   
+ height: 300px;
+  background-color: blue;
 
 }
 .pai{
@@ -101,10 +97,12 @@
 .menu{
     display: flex;
     list-style: none;
+    
 
 }
 .menu-li{
     background-color: blueviolet;
+
 }
 
 a{
@@ -112,7 +110,7 @@ a{
     color: blue;
     padding: 15px;
     font-size: 20px;
-
+  
 }
 
 .cor1{
@@ -125,6 +123,18 @@ a{
     background-color: purple;
 }
 
+
+@media (max-width: 320px) {
+    .grid{
+    grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .grid{
+    grid-template-columns: repeat(3, 1fr); 
+    }
+}
 
 /*----------------------------------PRATICA---------------------------*/
 
@@ -142,6 +152,7 @@ a{
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    clear: left;
 
 }
 
@@ -203,4 +214,61 @@ a{
 
 .pratica3-p::first-line{
     color: darkorange;    
+}
+
+/*EXERCICIO 6*/
+
+.caixa1-pratica6{
+    background-color: black;
+    width: 300px;
+}
+
+.caixa2-pratica6{
+    background-color: black;
+    width: 50%; 
+
+}
+
+.caixa3-pratica6{
+    background-color: black;    
+    width: 50vw;
+}
+/*EXERCICIO 7*/
+
+.pratica7{
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.html-pratica7{
+    
+  background-color: aqua;
+  width: 50%;
+  min-height: 10px;
+}
+.css-pratica7{
+  background-color: purple;
+  width: 50vw;
+}
+.js-pratica7{
+  background-color: chartreuse;
+  width: 300px;
+  min-height: 150px;
+
+}
+
+.html-pratica7:hover{
+   background-color: greenyellow;
+   transform: scale(1.1);
+}
+
+.js-pratica7 p:first-child{
+color: red;
+}
+
+.pratica7 h2::before{
+    content:'💻 ' ;
 }
