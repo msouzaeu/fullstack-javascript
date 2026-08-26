@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    background: green;
+    display: flex;
+    width: 500px;
+    height: 300px;
+    
+
+} 
+
+.card{
+    background: yellow;
+    width: 250px;  
+    height: 100%;
+
+}
+
+.card1{
+    background: greenyellow;
+}
+
+.card2{
+    background: blue;   
+
+
+}
+
+.card3{
+    background: red;
+
+
+}

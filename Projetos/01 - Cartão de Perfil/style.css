@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF9F5;
+
+}
+
+.cartao {
+    width: 90%;
+    min-height: 550px;
+    padding: 30px;
+    max-width: 530px;
+    border: 1px solid #d8654586;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.288);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-family: "poppins", sans-serif;
+    background: white;
+    color: #17233C;
+}
+
+.ft-perfil {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.area, .lista .assunto  {
+    color: #D86545;
+    font-weight: bold;
+
+}
+
+.descricao {
+    padding: 15px 0;
+
+}
+
+.lista {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px ;
+
+}
+
+.assunto {
+    width: auto;
+    border: 1px solid #d8654586;
+    border-radius: 10px;
+    padding: 10px;
+    color: #D86545;
+    transition: transform 0.3s;
+
+}
+
+.btt-perfil {
+    margin-top: 15px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #D86545;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+    
+}
+
+.assunto:hover{
+    background: #1b2947e1;
+    transform: scale(1.1);
+} 
+
+.btt-perfil:hover{
+    background: #1b2947e1;
+    transform: scale(1.1);
+} 
+
+.btt-perfil:focus-visible {
+    outline: 3px solid #17233C;
+    outline-offset: 3px;
+}
+

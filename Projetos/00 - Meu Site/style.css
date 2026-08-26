@@ -166,13 +166,13 @@ body {
 
 .cards {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 80vh;
   width: 100%;
   max-width: 1200px;
   gap: 30px;
-
+  flex-flow: row wrap;
+  align-content: center;
 
 }
 
@@ -182,12 +182,14 @@ body {
   justify-content: center;
   border: 2px solid black;
   border-radius: 15px;
-  width: 30%;
-  height: 90%;
   font-size: 3rem;
   transition: transform 0.3s;
   font-weight: bold;
   position: relative;
+  flex: 1 1 250px;
+  height: auto;
+  padding: 50px 20px;
+  
 
 }
 

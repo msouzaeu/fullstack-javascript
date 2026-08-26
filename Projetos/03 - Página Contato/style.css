@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #242824;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6F7F2;
+}
+
+.container-geral {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.466);
+    overflow: hidden;
+
+
+}
+
+.container-info,
+.container-form {
+    flex: 1;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+
+.icone-planta {
+    width: 80px;
+    height: 80px;
+    background: #DDE7D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 40px;
+
+}
+
+
+
+.container-info {
+    padding: 60px 0 60px 100px;
+    background-color: #F2F5EC;
+
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        color: #174D32;
+    }
+
+    p {
+        width: 70%;
+    }
+}
+
+.line {
+    width: 45px;
+    height: 3px;
+    background: #DDE7D8;
+}
+
+
+.caixa-nome {
+    display: grid;
+    width: 80%;
+
+}
+
+.icone-info {
+    width: 60px;
+    height: 60px;
+    background: #DDE7D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    i {
+        font-size: 30px;
+    }
+}
+
+
+.caixa-email-cidade-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+.caixa-linkedin-insta-github {
+    width: 40px;
+    height: 40px;
+    background: #DDE7D8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 24px;
+        transition: 0.2s;
+
+    }
+
+    a {
+        color: inherit;
+    }
+
+}
+
+.caixa-linkedin-insta-github i.fa-instagram:hover {
+    color: red;
+}
+
+.caixa-linkedin-insta-github i.fa-linkedin:hover {
+    color: rgb(60, 60, 247);
+}
+
+.caixa-linkedin-insta-github i.fa-github:hover {
+    color: #fffefe;
+}
+
+
+
+/*----------------------CONTAINER FORM----------------------*/
+
+
+.container-form {
+    padding: 60px 100px 60px 20px
+}
+
+.caixa-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.caixa-input {
+    width: 80%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 216, 216);
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+
+.caixa-mensagem {
+    width: 100%;
+    min-height: 150px;
+
+}
+
+
+textarea {
+    width: 80%;
+    min-height: 150px;
+    border: 1px solid rgb(221, 216, 216);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    /* Remove o contorno padrão azul/preto */
+    border: 2px solid #DDE7D8;
+    /* Cria uma borda personalizada (ex: azul suave) */
+    box-shadow: 0 0 5px rgba(52, 219, 127, 0.5);
+    /* Adiciona um brilho leve opcional */
+}
+
+
+.btt-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid rgb(221, 216, 216);
+    padding: 0px 0;
+    background: #174D32;
+    color: white;
+    transition: 0.3s;
+
+    i {
+        font-size: 20px;
+
+    }
+
+}
+
+.btt-enviar:hover {
+    background-color: #242824;
+    transform: translatey(-3px);
+    cursor: pointer;
+}
+
+
+/*----------------------RESPONSIVIDADE----------------------*/
+
+@media (max-width: 780px) {
+    .container-geral {
+        display: block;
+        width: 98%;
+        margin: 10px 0;
+    }
+
+    .icone-planta, .container-info h1, .line, .container-info p {
+        margin-bottom: 20px;
+
+    }
+    .caixa-email-cidade-redes {
+        padding-bottom: 10px;
+
+    }
+
+    .container-form,
+    .container-info {
+        min-height: auto;
+        padding: 5%;
+    }
+
+    .caixa-form {
+        padding-bottom: 15px;
+
+    }
+
+    .caixa-input,
+    .caixa-mensagem textarea, .btt-enviar {
+        width: 100%;
+    }
+}

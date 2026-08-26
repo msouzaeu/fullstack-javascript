@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Manrope", sans-serif;
+    color: #101322;
+    background-color: #F6F3FF;
+
+}
+
+.container-planos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px 0;
+    flex: 1;
+}
+
+.info-topo h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.info-topo .p-plano {
+    margin: 10px;
+    font-weight: 900;
+    color: #7439E8;
+
+}
+
+.info-topo .p-descricao {
+    margin-top: 15px;
+    max-width: 410px;
+    color: #858585;
+
+}
+
+
+/*----------------------- CARD PLANO -----------------------*/
+
+
+
+.caixa-planos {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 3;
+
+}
+
+.caixa-basico-pro-premium {
+    background: white;
+    flex-basis: 400px;
+    /* largura inicial */
+    min-height: 600px;
+    /* altura mínima */
+    padding: 30px;
+    /* espaço interno */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    border: 1px solid rgba(196, 196, 196, 0.815);
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 1px rgb(156, 156, 156);
+    transition: 0.2s;
+
+
+
+
+}
+
+.caixa-pro {
+    border: 2px solid #7439E8;
+    transform: translateY(-15px);
+    position: relative;
+
+
+}
+
+.mais-escolhido {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7439E8;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+
+
+}
+
+.icone-topo-card {
+    color: #7439E8;
+    font-size: 45px;
+}
+
+.titulo-card h2 {
+    font-weight: bold;
+
+}
+
+.titulo-card p {
+    margin-top: 10px;
+    color: #858585;
+
+}
+
+.preco {
+    width: 100%;
+}
+
+.preco .moeda {
+    font-weight: bold;
+}
+
+.preco .valor {
+    font-size: 50px;
+}
+
+.preco .mes {
+    color: #858585;
+}
+
+.preco::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #85858552;
+    display: block;
+    margin: 15px 0 0 0;
+
+}
+
+.beneficios {
+    width: 100%;
+    list-style: none;
+}
+
+.beneficios li {
+    padding: 10px 0;
+}
+
+.beneficios li i {
+    color: #7439E8;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+
+.btt-comecar {
+    width: 100%;
+    height: 50px;
+     margin-top: auto;
+    border-style: none;
+    background: transparent;
+    border: 1px solid #7439E8;
+    color: #7439E8;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btt-comecar:hover {
+    background: #7439E8;
+    color: white;
+    cursor: pointer;
+}
+
+.caixa-basico-pro-premium:hover {
+    background: #7339e828;
+}
+
+.btt-comecar:focus-visible {
+    outline: 3px solid #7439E8;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+
+    .caixa-planos {
+        display: block;
+        width: 95%;
+        height: auto;
+
+    }
+
+    .caixa-pro {
+    transform: translateY(0);
+
+}
+
+
+
+    .info-topo h1 {
+        font-size: 2rem;
+
+    }
+
+    .info-topo p {
+        padding: 0 10px;
+    }
+
+
+    .caixa-basico-pro-premium {
+        margin-bottom: 30px;
+    }
+
+
+}

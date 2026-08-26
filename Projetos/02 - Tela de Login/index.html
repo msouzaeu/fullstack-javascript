@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a38d32aba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="desenho-fundo1"></div>
+    <div class="desenho-fundo2"></div>
+    <div class="desenho-fundo3"></div>
+    <div class="desenho-fundo4"></div>
+
+    <form action="#">
+        <h1>Bem-Vindo</h1>
+        <div class="caixa-desenho">
+            <div class="desenho1"></div>
+            <div class="desenho2"></div>
+        </div>
+
+        <div class="caixa-acesso">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com.br">
+            <i class="fa-regular fa-envelope inicio"></i>
+        </div>
+
+        <div class="caixa-acesso">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <i class="fa-solid fa-lock inicio"></i>
+            <i class="fa-regular fa-eye"></i>
+        </div>
+
+        <div class="caixa-lembrar">
+            <input type="checkbox" name="lembrar-senha" id="lembrar-senha">
+            <label for="lembrar-senha">Lembrar senha</label>
+        </div>
+
+        <input class="btt-enviar" type="submit" value="Entrar" id="btt-entrar">
+        <a class="esqueci-senha" href="#">Esqueci minha senha</a>
+
+    </form>
+</body>
+
+</html>

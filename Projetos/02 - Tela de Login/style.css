@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #111827;
+}
+
+body {
+    background-color: #b8c9e988;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.desenho-fundo1 {
+    width: 100px;
+    height: 100px;
+    background: #b8c9e988;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    border-radius: 0px 100% 0px 0px;
+ }
+
+.desenho-fundo2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 110px;
+    left: 45px;
+
+    background-image: radial-gradient(circle,
+            #a8bfe9 3px,
+            transparent 3px);
+    background-size: 17px 18px;
+}
+
+
+.desenho-fundo3 {
+    width: 180px;
+    height: 300px;
+    background: #b8c9e988;
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+    border-radius: 0 50% 0 50%;
+
+}
+
+.desenho-fundo4 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    border-top: 1px solid #1747d1;
+    border-left: 1px solid #1747d1;
+    border-top-left-radius: 50%;
+    right: -3px;
+    bottom: 0;
+
+}
+
+.desenho-fundo1,
+.desenho-fundo2,
+.desenho-fundo3,
+.desenho-fundo4 {
+    z-index: 0;
+}
+
+.desenho-fundo4::before {
+    top: 0;
+    background-color: #1747d1;
+    border-radius: 100px 0 0 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+form {
+    width: 90%;
+    max-width: 400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.418);
+    position: relative;
+    background: white;
+    padding: 30px;
+    z-index: 1;
+
+
+}
+
+.desenho1 {
+    width: 35px;
+    height: 35px;
+    background: blue;
+    border-radius: 50% 0;
+    position: absolute;
+    top: 6%;
+    left: 45%;
+    z-index: 2;
+}
+
+.desenho2 {
+    width: 35px;
+    height: 35px;
+    background: rgb(131, 131, 172);
+    border-radius: 50% 0;
+    position: absolute;
+    top: 10%;
+    right: 42%;
+}
+
+.caixa-acesso {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 320px;
+    margin: 0 auto 10px auto;
+    position: relative;
+}
+
+i.inicio {
+    position: absolute;
+    top: 57%;
+    left: 3%;
+
+}
+
+i.fa-eye {
+    position: absolute;
+    top: 57%;
+    right: 3%;
+    opacity: 0;
+}
+
+.caixa-lembrar {
+    width: 100%;
+    max-width: 320px;
+    text-align: start;
+
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #D0D5DD;
+    padding-left: 10%;
+    margin-top: 5px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 2px solid #1747D1;
+
+}
+
+.caixa-acesso input:focus~i.fa-eye {
+    opacity: 1;
+}
+
+.btt-enviar {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #1747D1;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.btt-enviar:hover {
+    transform: translatey(3px);
+
+}
+
+.esqueci-senha{
+    position: absolute;
+    bottom: 10%;
+    color: #1747D1;
+    text-decoration: none;
+}
