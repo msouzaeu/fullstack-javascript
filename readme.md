@@ -231,10 +231,13 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 ├── 📁 05-formularios_inputs
 ├── 📁 06-seletores_css
 │
-├── 📁 projetos
-│   ├── 📁 netflix-clone
-│   ├── 📁 meu-site
-│   └── 📁 projetos-html-css
+├── 📁 Projetos
+│   ├── 📁 00 - Meu Site
+│   ├── 📁 01 - Cartão de Perfil
+│   ├── 📁 02 - Tela de Login
+│   ├── 📁 03 - Página Contato
+│   ├── 📁 04 - Tabela de Planos
+│   └── 📁 05 - Página de receita
 │
 └── README.md
 ```
@@ -261,7 +264,6 @@ Além dos exercícios realizados durante os estudos, comecei a utilizar projetos
 
 | Projeto | Tecnologias | Status |
 |---|---|---|
-| 🎬 Netflix Clone | HTML / CSS | 🚧 Em desenvolvimento |
 | 🌐 Meu Site | HTML / CSS | 🚧 Em desenvolvimento |
 
 ---
