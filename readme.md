@@ -222,14 +222,19 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 # 📂 Estrutura do repositório
 
 ```text
-📁 fullstack-javascript
+📁 Curso Full Stack
 │
-├── 📁 01-html_basico
-├── 📁 02-box_model
-├── 📁 03-listas_menus
-├── 📁 04-tabelas_html
-├── 📁 05-formularios_inputs
-├── 📁 06-seletores_css
+├── 📁 HTML-CSS
+│   ├── 📁 01 - HTML_Basico
+│   ├── 📁 02 - Box_Model
+│   ├── 📁 03 - Lista_Menus
+│   ├── 📁 04 - Tabelas_HTML
+│   ├── 📁 05 - Formulários_Inputs
+│   ├── 📁 06 - Seletores do CSS
+│   ├── 📁 07 - Position
+│   └── 📁 08 - Flexbox
+│
+├── 📁 JavaScript
 │
 ├── 📁 Projetos
 │   ├── 📁 00 - Meu Site
@@ -242,7 +247,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 └── README.md
 ```
 
-> 📌 A estrutura do repositório continuará sendo atualizada conforme novos conteúdos e projetos forem desenvolvidos.
+> 📌 A estrutura é atualizada conforme avanço nos estudos e desenvolvo novos projetos.
 
 ---
 
