@@ -20,6 +20,8 @@ html {
 
 }
 
+/*-----------------------  TOPO -----------------------*/
+
 .info-topo {
     display: flex;
     flex-direction: column;
@@ -180,6 +182,8 @@ html {
     transition: 0.2s;
 }
 
+/*----------------------- HOVER -----------------------*/
+
 .btt-comecar:hover {
     background: #7439E8;
     color: white;
@@ -194,6 +198,9 @@ html {
     outline: 3px solid #7439E8;
     border-radius: 4px;
 }
+
+
+/*----------------------- RESPONSIVO -----------------------*/
 
 @media (max-width: 768px) {
 

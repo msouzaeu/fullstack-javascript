@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/7a38d32aba.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+
+        <nav class="container-menu">
+
+            <div class="nome-menu">
+                <h1>Sabores da <span>Bahia</span></h1>
+                <i class="fa-brands fa-pagelines"></i>
+            </div>
+
+            <ul class="menu">
+                <li>Início</li>
+                <li class="menu-selecionado">Receitas</li>
+                <li>Regiões</li>
+                <li>Ingredientes</li>
+                <li>Dicas</li>
+                <li>Sobre</li>
+            </ul>
+
+
+            <div class="busca-menu">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar receitas...">
+                <i class="fa-solid fa-magnifying-glass icone-busca"></i>
+                <i class="fa-solid fa-heart coracao-menu"></i>
+                <button class="btt-entrar-menu">Entrar</button>
+            </div>
+            
+            <div class="menu-mobile-icone">
+                <button onclick="verMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            
+        </nav>
+
+         <div class="menu-mobile">
+              <ul class="menu">
+                <li>Início</li>
+                <li class="menu-selecionado">Receitas</li>
+                <li>Regiões</li>
+                <li>Ingredientes</li>
+                <li>Dicas</li>
+                <li>Sobre</li>
+            </ul>
+        </div>
+
+
+    </header>
+
+
+    <main class="conteudo-principal">
+
+        <section class="info-prato">
+
+            <div class="caixa-sobre-prato">
+
+                <p class="local-pagina">
+                    <i class="fa-solid fa-house"></i> / Receitas / <span>Moqueca Baiana</span>      
+                </p>
+
+                <h2 class="nome-prato">Moqueca Baiana</h2>
+                <p class="sobre-prato">Clássico da culinária baiana, feita com peixe fresco, leite de coco, azeite de
+                    dendê e temperos que trazem todo o sabor do litoral.
+                </p>
+
+                <div class="caixa-tempo-preparo">
+                <div class="info-preparo info-preparo-barra">
+                    <i class="fa-regular fa-clock icone-preparo"></i>
+                    <p>Tempo de preparo <span>50 min</span></p>
+                </div>
+
+                <div class="info-preparo info-preparo-barra">
+
+                    <i class="fa-solid fa-bowl-food icone-preparo"></i>
+                    <p>Rende <span>6 porções</span></p>
+                </div>
+
+                <div class="info-preparo ">
+                    <i class="fa-solid fa-utensils icone-preparo"></i>
+                    <p>Nível <span>Médio</span></p>
+                </div>
+                </div>
+
+            </div>
+
+            <img class="img-moqueca" src="./img/moqueca.jpg" alt="foto de moqueca">
+
+            <div class="caixa-ingredientes">
+                <div class="caixa-titulo-ingredientes">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <h3>Ingredientes</h3></div>
+
+                <ul class="lista-ingredientes">
+                    <li><i class="fa-solid fa-leaf"></i> 1 kg de peixe em postas (robalo ou badejo)</li>
+                    <li><i class="fa-solid fa-leaf"></i> 2 colheres (sopa) de suco de limão</li>
+                    <li><i class="fa-solid fa-leaf"></i> 2 cebolas grandes em rodelas</li>
+                    <li><i class="fa-solid fa-leaf"></i> 2 tomates grandes em rodelas</li>
+                    <li><i class="fa-solid fa-leaf"></i> 1 pimentão vermelho em tiras</li>
+                    <li><i class="fa-solid fa-leaf"></i> 1 pimentão amarelo em tiras</li>
+                    <li><i class="fa-solid fa-leaf"></i> 4 dentes de alho picados</li>
+                    <li><i class="fa-solid fa-leaf"></i> 1 maço de coentro picado</li>
+                    <li><i class="fa-solid fa-leaf"></i> 200 ml de leite de coco</li>
+                    <li><i class="fa-solid fa-leaf"></i> 3 colheres (sopa) de azeite de dendê</li>
+                    <li><i class="fa-solid fa-leaf"></i> Sal e pimenta-do-reino a gosto</li>
+                </ul>
+            </div>
+
+            <div class="caixa-preparo">
+
+                <div class="caixa-titulo-preparo">
+                <i class="fa-solid fa-mortar-pestle"></i> 
+                <h3>Modo de preparo</h3></div>
+
+                <ol class="lista-preparo">
+                   
+                    <li>Tempere as postas de peixe com o suco de limão, sal e pimenta-do-reino. Reserve por 15 minutos.
+                    </li>
+                    <li>Em uma panela larga, faça uma cama com metade da cebola, do tomate e dos pimentões.
+                    </li>
+                    <li>Disponha as postas de peixe sobre os legumes e cubra com o restante da cebola, do tomate e dos
+                        pimentões.
+                    </li>
+                    <li>Adicione o alho picado, regue com o azeite de dendê e o leite de coco.
+                    </li>
+                    <li>Leve ao fogo baixo, com a panela tampada, e cozinhe por cerca de 25 minutos ou até o peixe estar
+                        macio.
+                    </li>
+                    <li>Finalize com o coentro picado e sirva quente com arroz branco.
+                    </li>
+                </ol>
+
+                <div class="dica-chef">
+                    <i class="fa-solid fa-mortar-pestle"></i>
+                    <h4>Dica do chef</h4>
+                    <p>Para um sabor ainda mais autêntico, use peixe fresco do dia e azeite de dendê de boa qualidade.</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

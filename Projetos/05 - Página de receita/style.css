@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #FFF9F0;
+    color: #5e2c1dc7;
+}
+
+body h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+    color: #431A0E;
+}
+
+
+/*--------------------------------MENU--------------------------------*/
+
+.container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    background-color: white;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #431A0E;
+
+}
+
+.menu li {
+    padding: 0 20px;
+}
+
+.menu-selecionado {
+    color: #E94B16;
+    font-weight: bold;
+}
+
+.menu-selecionado::after {
+    display: block;
+    content: "";
+    width: 67px;
+    height: 2px;
+    margin-top: 10px;
+    background: #E94B16;
+}
+
+
+.nome-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nome-menu h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 25px;
+}
+
+.nome-menu i {
+    font-size: 70px;
+    color: #647a2ea2;
+}
+
+.nome-menu span {
+    color: #E94B16;
+}
+
+.busca-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+.busca-menu input[type="text"] {
+    height: 40px;
+    width: 250px;
+    border: 1px solid #5e2c1d70;
+    border-radius: 25px;
+    padding-left: 15px;
+}
+
+.icone-busca {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 55%;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    color: #E94B16;
+    cursor: pointer;
+}
+
+.btt-entrar-menu {
+    height: 40px;
+    border: 1px solid #5e2c1d70;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #E94B16;
+    color: white;
+    cursor: pointer;
+}
+
+.btt-entrar-menu:hover{
+    background-color: #8b2807;
+}
+
+.coracao-menu:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.menu-mobile-icone,
+.menu-mobile {
+    display: none;
+}
+
+/*--------------------------------MAIN--------------------------------*/
+
+.info-prato {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 0;
+    padding: 0 50px;
+    margin-top: 2px;
+}
+
+.caixa-sobre-prato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-column: span 2;
+    line-height: 1.5;
+}
+
+.img-moqueca {
+    grid-column: span 2;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.caixa-sobre-prato h2 {
+    font-size: 100px;
+}
+
+.caixa-sobre-prato p {
+    width: 45%;
+}
+
+.caixa-sobre-prato .local-pagina span {
+    color: #E94B16;
+
+}
+
+.info-preparo {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-left: 50px;
+}
+
+.caixa-sobre-prato .info-preparo p {
+    font-size: 12px;
+    width: 100%;
+}
+
+.caixa-tempo-preparo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    position: relative;
+}
+
+.info-preparo span {
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+}
+
+.info-preparo .icone-preparo {
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.info-preparo-barra::after {
+    content: "";
+    width: 1.5px;
+    height: 100%;
+    background: #5e2c1d70;
+    position: absolute;
+    left: 75%;
+}
+
+
+.caixa-ingredientes {
+    grid-column: 1;
+    background: white;
+    width: 80%;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #ee70464b;
+}
+
+.caixa-titulo-ingredientes {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.caixa-titulo-ingredientes i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #E94B16;
+}
+
+.caixa-ingredientes h3,
+.caixa-preparo h3 {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.caixa-ingredientes ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.lista-ingredientes i {
+    color: #657A2E;
+    font-size: 10px;
+    padding-right: 20px;
+}
+
+.caixa-preparo {
+
+    grid-column: span 3;
+    background: white;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #ee70464b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.caixa-titulo-preparo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.caixa-titulo-preparo i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #E94B16;
+}
+
+ol {
+    list-style: none;
+    counter-reset: meu-contador;
+    margin-top: 15px;
+}
+
+ol li {
+    counter-increment: meu-contador;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+
+}
+
+ol li:not(:last-child) {
+    border-bottom: 1px dotted black;
+}
+
+ol li::before {
+    content: counter(meu-contador);
+
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #E94B16;
+    border-radius: 50%;
+    color: #E94B16;
+
+}
+
+
+.dica-chef {
+    position: relative;
+
+    border: 1px solid #647a2e38;
+    border-radius: 15px;
+    padding: 10px 10px 10px 65px;
+
+    background: #c9daa12d;
+
+}
+
+.dica-chef i {
+    position: absolute;
+    left: 0;
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #657A2E;
+}
+
+.dica-chef h4 {
+    font-weight: bold;
+    color: #657A2E;
+
+}
+
+
+/*------------------------------RESPONSIVO------------------------------*/
+
+@media (max-width: 780px) {
+
+
+
+    .container-menu {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+
+    .nome-menu h1 {
+        width: 150px;
+        font-size: 25px;
+    }
+
+    .nome-menu i {
+        font-size: 60px;
+
+    }
+
+    .icone-busca {
+        left: 70%;
+    }
+
+    .menu,
+    .busca-menu .btt-entrar-menu {
+        display: none;
+    }
+
+      .busca-menu {
+display: none;
+    }
+
+        .info-prato {
+        padding: 0 20px;
+    }
+
+    .img-moqueca,
+    .caixa-ingredientes,
+    .caixa-preparo {
+        width: 100%;
+    }
+
+    .caixa-tempo-preparo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+  
+
+    .info-preparo-barra::after {
+    display: none;
+}
+
+
+    .menu-mobile-icone {
+        display: block;
+    }
+
+    .menu-mobile-icone button{
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+        .menu-mobile-icone i{
+        font-size: 30px;
+        color: #5e2c1dc7;
+
+    }
+
+    
+
+    .open{
+        display: block;
+    }
+
+        .menu-mobile ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-mobile li{
+            padding-top: 1.2rem;
+        }
+
+
+        .caixa-sobre-prato h2{
+            font-size: 5rem;
+        }
+        .caixa-sobre-prato p{
+            width: 100%;
+
+        }
+      .info-prato {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+  
+}
