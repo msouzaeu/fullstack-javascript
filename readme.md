@@ -16,7 +16,9 @@ Este repositório documenta minha jornada de estudos em **Desenvolvimento Full S
 
 Aqui registro os conteúdos que estou aprendendo, exercícios desenvolvidos durante os estudos e projetos utilizados para colocar os conhecimentos em prática.
 
-Após construir minha base em **HTML e CSS**, inicio agora meus estudos em **JavaScript**, enquanto continuo aprimorando HTML e CSS através da prática e de novos projetos.
+Comecei construindo minha base em **HTML e CSS** e desenvolvendo projetos para aplicar os conhecimentos estudados.
+
+Atualmente, estou avançando nos estudos de **JavaScript**, enquanto continuo aprimorando HTML e CSS através da prática e do desenvolvimento de novos projetos.
 
 O objetivo é acompanhar minha evolução, consolidar o aprendizado através da prática e construir gradualmente meu portfólio como desenvolvedor.
 
@@ -26,7 +28,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 
 - 📚 Construir uma base sólida em HTML, CSS e JavaScript
 - 💻 Aplicar os conhecimentos através de exercícios e projetos
-- ⚡ Desenvolver páginas interativas com JavaScript
+- ⚡ Desenvolver aplicações interativas com JavaScript
 - ⚛️ Avançar futuramente para React
 - 🟢 Aprender Node.js e desenvolvimento Back-end
 - 🛠️ Desenvolver aplicações Full Stack
@@ -38,6 +40,8 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 # 🚀 Roadmap
 
 ## 🌐 HTML
+
+### Fundamentos
 
 - [x] Estrutura básica do HTML
 - [x] HTML semântico
@@ -57,13 +61,13 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 
 ✅ **Base concluída**
 
-> HTML continuará sendo praticado e aprofundado durante o desenvolvimento dos próximos projetos.
+> HTML continuará sendo praticado e aprimorado através dos próximos projetos.
 
 ---
 
-## 🎨 CSS
+# 🎨 CSS
 
-### Fundamentos
+## Fundamentos
 
 - [x] Box Model
 - [x] Margin
@@ -71,17 +75,18 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 - [x] Border
 - [x] `box-sizing`
 - [x] Cores
+- [x] Unidades de medida
 - [x] Seletores básicos
-- [x] Seletor por elemento
-- [x] Seletor por classe
-- [x] Seletor por ID
+- [x] Seletores por elemento
+- [x] Seletores por classe
+- [x] Seletores por ID
 - [x] Seletores descendentes
 - [x] Seletores de filho direto
 - [x] Seletores de atributos
 - [x] Especificidade
 - [x] Herança
 
-### Pseudo-classes e pseudo-elementos
+## Pseudo-classes e pseudo-elementos
 
 - [x] Pseudo-classes
 - [x] `:hover`
@@ -94,7 +99,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 - [x] `::first-letter`
 - [x] `::first-line`
 
-### Layout
+## Layout
 
 - [x] `display`
 - [x] Flexbox
@@ -113,7 +118,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 - [x] `overflow`
 - [x] Posicionamento de elementos
 
-### Dimensões e unidades
+## Dimensões e unidades
 
 - [x] `width` e `height`
 - [x] `min-width` e `max-width`
@@ -125,14 +130,14 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 - [x] `vw` e `vh`
 - [x] `vmin` e `vmax`
 
-### Estilização
+## Estilização
 
 - [x] Propriedades de texto
 - [x] `border-radius`
 - [x] `box-shadow`
 - [x] `scroll-behavior`
 
-### Responsividade
+## Responsividade
 
 - [x] Media Queries
 - [x] Breakpoints
@@ -142,45 +147,118 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 
 ✅ **Base concluída**
 
-> CSS continuará sendo aprimorado através da construção de interfaces e projetos.
+> CSS continuará sendo aprimorado através da prática e da construção de novos projetos.
 
 ---
 
-## ⚡ JavaScript
+# ⚡ JavaScript
 
-🚧 **Em estudo**
+## Seção 1: JavaScript para iniciantes
 
 ### Fundamentos
 
-- [ ] Variáveis
-- [ ] Tipos de dados
-- [ ] Operadores
-- [ ] Condicionais
-- [ ] Loops
-- [ ] Funções
+- [x] `console.log()`
+- [x] Variáveis com `let` e `const`
+- [x] Operadores aritméticos
+- [x] Operadores de atribuição
+- [x] Incremento e decremento
+- [x] Potenciação
+- [x] Resto da divisão
+- [x] Conversão de números
+- [x] `alert()`
+- [x] `prompt()`
+- [x] `window`
 
-### Estruturas de dados
+### Strings
 
-- [ ] Arrays
-- [ ] Objetos
+- [x] Strings
+- [x] Caracteres especiais
+- [x] Acesso por índice
+- [x] `length`
+- [x] `indexOf()`
+- [x] `lastIndexOf()`
+- [x] `match()`
+- [x] `search()`
+- [x] `replace()`
+- [x] `slice()`
+- [x] `split()`
+- [x] `toLowerCase()`
+- [x] `toUpperCase()`
 
-### JavaScript no navegador
+### Numbers e Math
 
-- [ ] DOM
-- [ ] Eventos
-- [ ] Manipulação de elementos
-- [ ] Formulários com JavaScript
+- [x] Conversão de valores
+- [x] `toString()`
+- [x] `toFixed()`
+- [x] `Number.isInteger()`
+- [x] `Number.isNaN()`
+- [x] `Math.floor()`
+- [x] `Math.ceil()`
+- [x] `Math.round()`
+- [x] `Math.max()`
+- [x] `Math.min()`
+- [x] `Math.random()`
 
-### JavaScript assíncrono
+### Arrays
 
-- [ ] Promises
-- [ ] Async / Await
-- [ ] Fetch API
-- [ ] Consumo de APIs
+- [x] Criação de arrays
+- [x] Índices
+- [x] Arrays multidimensionais
+- [x] `push()`
+- [x] `pop()`
+- [x] `unshift()`
+- [x] `shift()`
+- [x] `delete`
+- [x] Verificação de array
+
+### Funções
+
+- [x] Funções
+- [x] Parâmetros
+- [x] `return`
+- [x] Arrow functions
+- [x] Escopo de variáveis
+
+### Objetos
+
+- [x] Criação de objetos
+- [x] Propriedades
+- [x] Acesso às propriedades
+- [x] Métodos
+- [x] `this`
+- [x] Objetos como estruturas de dados
+
+### Valores
+
+- [x] Valores primitivos
+- [x] Valores por referência
+- [x] String
+- [x] Number
+- [x] Boolean
+- [x] `undefined`
+- [x] `null`
+- [x] BigInt
+
+### DOM e eventos
+
+- [x] Introdução ao DOM
+- [x] `document.getElementById()`
+- [x] `document.querySelector()`
+- [x] `innerHTML`
+- [x] `innerHTML +=`
+- [x] Eventos
+- [x] Eventos de formulário
+- [x] Funções trabalhando com dados de formulários
+
+### Status
+
+✅ **Módulo básico concluído**
+
+> O estudo de JavaScript continuará avançando para novos conteúdos e projetos.
 
 ---
 
-## 🐙 Git e GitHub
+# 🐙 Git e GitHub
 
 - [x] Criar um repositório
 - [x] Inicializar um projeto com Git
@@ -196,7 +274,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 
 ---
 
-## ⚛️ React
+# ⚛️ React
 
 - [ ] Componentes
 - [ ] Props
@@ -207,7 +285,7 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 
 ---
 
-## 🟢 Node.js
+# 🟢 Node.js
 
 - [ ] Fundamentos do Node.js
 - [ ] NPM
@@ -222,10 +300,10 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 # 📂 Estrutura do repositório
 
 ```text
-📁 Curso Full Stack
+📁 Curso FullStack
 │
 ├── 📁 HTML-CSS
-│   ├── 📁 01 - HTML_Basico
+│   ├── 📁 01 - Html_Basico
 │   ├── 📁 02 - Box_Model
 │   ├── 📁 03 - Lista_Menus
 │   ├── 📁 04 - Tabelas_HTML
@@ -235,6 +313,25 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 │   └── 📁 08 - Flexbox
 │
 ├── 📁 JavaScript
+│   └── 📁 JavaScript Básico
+│       ├── 📁 04 - Operadores
+│       ├── 📁 05 - Strings
+│       ├── 📁 06 - Numbers
+│       ├── 📁 07 - Arrays
+│       ├── 📁 08 - Funções
+│       ├── 📁 09 - Objetos
+│       ├── 📁 10 - Valores primitivos e valores por referência
+│       └── 📁 Exercícios
+│           ├── 📁 Cadastro de treinos
+│           ├── 📁 functionArrayObjects
+│           └── 📁 Revisão Geral
+│               ├── 📁 Mini Projeto 1 - Gerador de Desafios Dev
+│               ├── 📁 Mini Projeto 2 - Cadastro
+│               └── 📁 Mini Projeto 3 - Painel de Desafios Dev
+│
+├── 📁 Praticando
+│   ├── 📄 praticaChat_1_2_3-4-5-6.js
+│   └── 📄 praticando-CHAT.html
 │
 ├── 📁 Projetos
 │   ├── 📁 00 - Meu Site
@@ -247,29 +344,33 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 └── README.md
 ```
 
-> 📌 A estrutura é atualizada conforme avanço nos estudos e desenvolvo novos projetos.
+> 📌 A estrutura é atualizada conforme novos conteúdos e projetos são desenvolvidos.
 
 ---
 
 # 💻 Projetos
 
-Além dos exercícios realizados durante os estudos, comecei a utilizar projetos completos para consolidar HTML e CSS na prática.
-
-## 🎨 Projetos HTML + CSS
-
-| Projeto | Principais conceitos praticados | Status |
-|---|---|---|
-| 👤 Cartão de Perfil | Flexbox, espaçamento e estilização | ✅ Concluído |
-| 🔐 Tela de Login | Formulários, posicionamento e pseudo-classes | ✅ Concluído |
-| 📬 Página de Contato | Formulários, layout e responsividade | ✅ Concluído |
-| 💳 Tabela de Planos | Flexbox, posicionamento e dimensionamento | ✅ Concluído |
-| 🍲 Página de Receita | Grid, Flexbox e organização de layout | ✅ Concluído |
-
-### Outros projetos
+## HTML + CSS
 
 | Projeto | Tecnologias | Status |
 |---|---|---|
-| 🌐 Meu Site | HTML / CSS | 🚧 Em desenvolvimento |
+| 🌐 Meu Site | HTML / CSS | ✅ Concluído |
+| 👤 Cartão de Perfil | HTML / CSS | ✅ Concluído |
+| 🔐 Tela de Login | HTML / CSS | ✅ Concluído |
+| 📬 Página de Contato | HTML / CSS | ✅ Concluído |
+| 💳 Tabela de Planos | HTML / CSS | ✅ Concluído |
+| 🍲 Página de Receita | HTML / CSS | ✅ Concluído |
+
+## JavaScript
+
+| Projeto | Tecnologias | Status |
+|---|---|---|
+| 🎯 Gerador de Desafios Dev | JavaScript | 🚧 Em evolução |
+| 🏋️ Cadastro de Treinos | JavaScript | 🚧 Em desenvolvimento |
+| 📋 Painel de Desafios Dev | JavaScript | 🚧 Em desenvolvimento |
+| 🧩 Exercícios de Funções, Arrays e Objetos | JavaScript | ✅ Em prática |
+
+> Os projetos em JavaScript são desenvolvidos e evoluídos conforme novos conteúdos são aprendidos.
 
 ---
 
@@ -300,59 +401,60 @@ Além dos exercícios realizados durante os estudos, comecei a utilizar projetos
 ```text
 HTML        ██████████  Base concluída ✅
 CSS         ██████████  Base concluída ✅
-JavaScript  █░░░░░░░░░  Iniciando 🚧
+JavaScript  ████░░░░░░  Fundamentos concluídos 🚧
 React       ░░░░░░░░░░  Futuro
 Node.js     ░░░░░░░░░░  Futuro
 ```
 
-> Concluir a base não significa encerrar os estudos da tecnologia. HTML e CSS continuarão sendo praticados e aprofundados durante os próximos projetos.
+> Os indicadores representam uma visão aproximada do progresso dentro do meu roadmap de estudos.
 
 ---
 
 # 📅 Última etapa de estudos
 
-Durante esta etapa, aprofundei meus conhecimentos em CSS e coloquei os conceitos em prática através de diferentes projetos.
+## JavaScript
 
-### 📚 Conteúdos
+Nesta etapa, concluí o **módulo básico da Seção 1: JavaScript para iniciantes**.
 
-✅ Flexbox e propriedades de alinhamento  
-✅ CSS Grid  
-✅ Unidades de medida  
-✅ Dimensões e controle de tamanho  
-✅ Pseudo-classes  
-✅ Pseudo-elementos  
-✅ Especificidade e herança  
-✅ Posicionamento  
-✅ Media Queries e breakpoints  
-✅ Responsividade  
-✅ `border-radius`  
-✅ `box-shadow`
+### 📚 Conteúdos estudados
+
+✅ Variáveis e constantes  
+✅ Operadores  
+✅ Strings  
+✅ Numbers e Math  
+✅ Arrays  
+✅ Funções  
+✅ Arrow functions  
+✅ Objetos  
+✅ Métodos e `this`  
+✅ Valores primitivos e por referência  
+✅ Introdução ao DOM  
+✅ Manipulação de elementos  
+✅ Eventos  
+✅ Formulários
 
 ### 💻 Prática
 
-✅ 5 projetos utilizando HTML e CSS  
-✅ Construção de diferentes tipos de layout  
-✅ Aplicação de responsividade  
-✅ Uso combinado de Flexbox e Grid  
-✅ Prática de posicionamento e dimensionamento
+✅ Exercícios individuais  
+✅ Revisões gerais  
+✅ Cadastro de treinos  
+✅ Exercícios envolvendo funções, arrays e objetos  
+✅ Gerador de Desafios Dev  
+✅ Cadastro  
+✅ Painel de Desafios Dev
 
 ---
 
 # 🎯 Próximos passos
 
-🚧 **JavaScript**
+⚡ Continuar avançando em JavaScript
 
-⬜ Fundamentos da linguagem  
-⬜ Variáveis e tipos de dados  
-⬜ Operadores  
-⬜ Condicionais  
-⬜ Loops  
-⬜ Funções  
-⬜ Manipulação do DOM  
-⬜ Eventos  
-⬜ Projetos utilizando HTML + CSS + JavaScript
-
-Enquanto avanço em JavaScript, continuarei praticando e aprimorando **HTML e CSS** nos projetos.
+⬜ Aprofundar manipulação do DOM  
+⬜ Trabalhar com mais eventos e interações  
+⬜ Desenvolver novos projetos com JavaScript  
+⬜ Continuar aprimorando HTML e CSS através da prática  
+⬜ Avançar futuramente para React  
+⬜ Aprender Node.js e Back-end
 
 ---
 

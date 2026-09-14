@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/7a38d32aba.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <aside class="caixa-menu">
+        <p>DevTrack</p>
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Visão geral</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i>Meus cursos</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-trend-up"></i>Progresso</a></li>
+                <li><a href="#"><i class="fa-solid fa-trophy"></i>Desafios</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i>Configurações</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="container-dash">
+
+        <header class="info-topo">
+
+            <div class="saudacao">
+                <h1>Olá, Mateus👋</h1>
+                <p>Continue evoluindo um pouco todos os dias</p>
+            </div>
+
+            <button class="avatar" type="button" aria-label="Abrir perfil de Mateus">
+                M
+            </button>
+
+        </header>
+
+        <div class="caixa-info">
+            <div class="curso-andamento caixa-dados">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p>Cursos em andamento<span>4</span></p>
+            </div>
+            <div class="horas-estudadas caixa-dados">
+                <i class="fa-regular fa-clock"></i>
+                <p>Horas estudadas <span>36h</span></p>
+            </div>
+            <div class="sequencia  caixa-dados">
+                <i class="fa-solid fa-fire"></i>
+                <p>Sequência atual <span>12 dias</span></p>
+            </div>
+        </div>
+
+        <div class="caixa-estudo">
+
+            <section class="estudo-atual">
+                <h2>Continue estudando</h2>
+                <div class="caixa-curso-andamento">
+                    <i class="fa-brands fa-square-js"></i>
+                    <div class="fundo-icone"></div>
+                    <h3>JavaScript Essencial</h3>
+                    <p>65%<span> concluído</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-interno"></div>
+                    </div>
+                </div>
+                <button type="button">Continuar curso</button>
+
+            </section>
+
+            <section class="agenda-dia">
+                <h2>Agenda de hoje</h2>
+                <ul>
+                    <li><i class="fa-solid fa-book"></i>Aula de Strings</li>
+                    <li><i class="fa-solid fa-pencil"></i>Exercício prático</li>
+                    <li><i class="fa-solid fa-code"></i>Revisar HTML e CSS</li>
+                </ul>
+            </section>
+
+        </div>
+        <section class="seus-cursos">
+            <h2 class="titulo-cursos">Seus cursos</h2>
+
+            <div class="cursos">
+
+                <article class="caixa-curso curso-html-css">
+                    <i class="fa-brands fa-html5 icone-html"></i>
+                    <h3>HTML e CSS</h3>
+                    <p>80%<span> concluído</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-interno-html-css"></div>
+                    </div>
+                </article>
+
+                <article class="caixa-curso curso-js">
+                    <i class="fa-brands fa-square-js icone-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>65%<span> concluído</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-interno-js"></div>
+                    </div>
+                </article>
+
+                <article class="caixa-curso curso-git">
+                    <i class="fa-solid fa-code-branch icone-git"></i>
+                    <h3>Git e GitHub</h3>
+                    <p>40%<span> concluído</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-interno-git"></div>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

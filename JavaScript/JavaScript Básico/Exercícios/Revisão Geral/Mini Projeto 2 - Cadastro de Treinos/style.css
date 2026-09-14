@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+
+    width: 100%;
+    height: 400px;
+
+    background-color: burlywood;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column ;
+    padding: 15px;
+    gap: 20px;
+    height: 400px ;  
+    overflow: auto;
+
+}
+
+.listaTreinos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    
+
+ 
+}
+
+.caixaDivJs{
+ background-color: rgba(105, 105, 105, 0.185);
+ padding: 15px;
+ border-radius: 15px;
+ flex: 1 1 180px;
+}

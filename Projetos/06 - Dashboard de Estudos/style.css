@@ -1,0 +1,434 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #061B38;
+    --roxo: #6936D9;
+    --fundo: #F7F8FC;
+    --branco: #FFFFFF;
+    --azul-claro: #18A6D9;
+    --amarelo: #F5AE00;
+    --texto: #111827;
+    --texto-secundário: #6B7280;
+    --borda: 10px
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+
+    min-height: 100vh;
+    color: var(--texto-secundário);
+
+}
+
+
+.container-dash {
+    grid-column: span 9;
+
+    padding: 25px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--texto);
+}
+
+
+/*------------------------ MENU LATERAL------------------------- */
+
+.caixa-menu {
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 70px;
+    padding-top: 20px;
+    background-color: var(--azul-escuro);
+}
+
+.caixa-menu p {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    list-style: none;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--branco);
+    padding: 10px;
+    
+}
+
+.menu li a i {
+    font-size: 30px;
+}
+
+.menu li a:hover{
+    background-color: #F5AE00;
+}
+/*-------------------------- INFO TOPO -------------------------- */
+
+.container-dash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 35px;
+    background-color: var(--fundo);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    background-color: var(--roxo);
+    color: var(--branco);
+}
+
+.avatar:hover{
+    background-color: #6a36d9dc;
+}
+/*-------------------------- DADOS -------------------------- */
+.caixa-info,
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.caixa-dados {
+    height: 110px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.158);
+}
+
+.caixa-dados span {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.caixa-dados i {
+    width: 70px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+.curso-andamento {
+
+    i {
+        background-color: #6a36d934;
+        color: var(--roxo);
+
+    }
+
+    span {
+        color: var(--roxo);
+
+    }
+
+}
+
+.horas-estudadas {
+
+    i {
+        background-color: #18a6d934;
+        color: var(--azul-claro);
+
+    }
+
+    span {
+        color: var(--azul-claro);
+
+    }
+
+}
+
+.sequencia {
+
+    i {
+        background-color: #f5b0002d;
+        color: var(--amarelo);
+
+    }
+
+    span {
+        color: var(--amarelo);
+
+    }
+
+}
+
+.caixa-estudo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    height: 300px;
+}
+
+.estudo-atual {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--branco);
+    border-radius: var(--borda);
+    box-shadow: rgba(90, 87, 87, 0.1) 0px 4px 12px;
+
+    padding: 20px;
+}
+
+
+.estudo-atual .caixa-curso-andamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 83%;
+    padding-left: 160px;
+    gap: 10px;
+    position: relative;
+
+}
+
+.estudo-atual .caixa-curso-andamento i {
+    font-size: 150px;
+    width: 131px;
+    position: absolute;
+    left: 0;
+    color: #ffd723;
+    z-index: 2;
+}
+
+.estudo-atual .caixa-curso-andamento .fundo-icone {
+    font-size: 150px;
+    position: absolute;
+    left: 25px;
+    width: 100px;
+    height: 120px;
+    background-color: var(--texto);
+}
+
+.estudo-atual .caixa-curso-andamento h3 {
+    font-size: 30px;
+}
+
+.estudo-atual .caixa-curso-andamento p {
+    color: var(--roxo);
+    font-weight: bold;
+}
+
+.estudo-atual .caixa-curso-andamento span {
+    color: var(--roxo);
+    font-weight: normal;
+}
+
+.estudo-atual .caixa-curso-andamento .barra-progresso {
+    background-color: rgba(155, 155, 155, 0.404);
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.estudo-atual .caixa-curso-andamento .barra-progresso-interno {
+    background-color: var(--roxo);
+    width: 65%;
+    height: 10px;
+    border-radius: var(--borda);
+}
+
+.estudo-atual button {
+    border: none;
+    width: 170px;
+    padding: 15px;
+
+    color: var(--branco);
+    background-color: var(--roxo);
+    border-radius: var(--borda);
+
+}
+
+.agenda-dia {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+    width: 80%;
+
+    background: var(--branco);
+    border-radius: var(--borda);
+    box-shadow: rgba(90, 87, 87, 0.1) 0px 4px 12px;
+
+    padding: 0 20px;
+}
+.agenda-dia h2{
+    padding: 20px 0 30px 0;
+}
+.agenda-dia ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+
+    list-style: none;
+}
+
+.agenda-dia li {
+    display: flex;
+    align-items: center;
+
+
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 40px;
+
+}
+
+.agenda-dia li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    left: 0;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--borda);
+    color: var(--roxo);
+    background-color: #a986f53d;
+
+}
+
+.agenda-dia ul li:not(:last-child) {
+    border-bottom: 1px solid #3535354b;
+}
+
+
+.caixa-curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    padding-left: 90px;
+    margin-top: 20px;
+
+    gap: 10px;
+    width: 80%;
+    height: 110px;
+    background-color: white;
+    border-radius: var(--borda);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.158);
+
+
+}
+
+.caixa-curso i {
+    position: absolute;
+    font-size: 70px;
+    padding: 20px;
+    left: 0;
+}
+
+.caixa-curso .icone-html {
+    color: darkorange;
+}
+
+.caixa-curso .icone-js {
+    color: #ffd723;
+}
+
+.caixa-curso .icone-git {
+    color: rgb(0, 132, 255);
+    font-size: 60px;
+}
+
+.caixa-curso p {
+    color: #6936D9;
+    font-weight: bold;
+}
+.caixa-curso span {
+    color: #6936D9;
+    font-weight: normal;
+}
+
+.barra-progresso{
+    width: 90%;
+    height: 10px;
+    border-radius: var(--borda);
+    background-color: #6B7280;
+}
+.barra-progresso-interno-html-css{
+    width: 80%;
+    height: 10px;
+    border-radius: var(--borda);
+    background-color: var(--roxo);
+}
+.barra-progresso-interno-js{
+    width: 65%;
+    height: 10px;
+    border-radius: var(--borda);
+    background-color: var(--roxo);
+}
+.barra-progresso-interno-git{
+    width: 40%;
+    height: 10px;
+    border-radius: var(--borda);
+    background-color: var(--roxo);
+}

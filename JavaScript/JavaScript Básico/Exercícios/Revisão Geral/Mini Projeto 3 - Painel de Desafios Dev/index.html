@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+     <h1>Desafios DEV</h1>
+
+    <form action="" id="form">
+        <p>Nome do desafio: <input type="text" id="nomeDesafio"></p>
+        <p>Tecnologia: <input type="text" id="tecnologia"></p>
+        <p>Dificuldade: <select name="dificuldade" id="dificuldade">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select></p>
+        <p class="pontuacao">Pontuação (10 a 100): <input type="text" id="pontuacao"></p>
+        <input type="submit">
+    </form>
+
+    <div class="exibir">
+        <p class="totalDesafios">Desafios cadastrado: 0</p>
+        <div id="mostrarDesafios"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
