@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simulador de compra</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+  <form action="#" id="form">
+    <label for="valor">Valor da compra</label>
+    <input type="text" id="valor">
+    <h4>Forma de pagamento</h4>
+    <label for="pix">Pix</label>
+    <input type="radio" id="pix" name="pagamento" value="pix">
+    <label for="cartao">Cartão</label>
+    <input type="radio" id="cartao" name="pagamento" value="cartao">
+    <label for="boleto">Boleto</label>
+    <input type="radio" id="boleto" name="pagamento" value="boleto">
+    <label for="desconto">Possui desconto?</label>
+    <select name="desconto" id="desconto">
+      <option value="sim">Sim</option>
+      <option value="nao" selected>Não</option>
+    </select>
+    <input type="submit" value="Enviar" class="btt">
+  </form>
+
+  <div id="mostra-resultado"></div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
