@@ -300,48 +300,61 @@ O objetivo é acompanhar minha evolução, consolidar o aprendizado através da 
 # 📂 Estrutura do repositório
 
 ```text
-📁 Curso FullStack
-│
-├── 📁 HTML-CSS
-│   ├── 📁 01 - Html_Basico
-│   ├── 📁 02 - Box_Model
-│   ├── 📁 03 - Lista_Menus
-│   ├── 📁 04 - Tabelas_HTML
-│   ├── 📁 05 - Formulários_Inputs
-│   ├── 📁 06 - Seletores do CSS
-│   ├── 📁 07 - Position
-│   └── 📁 08 - Flexbox
-│
-├── 📁 JavaScript
-│   └── 📁 JavaScript Básico
-│       ├── 📁 04 - Operadores
-│       ├── 📁 05 - Strings
-│       ├── 📁 06 - Numbers
-│       ├── 📁 07 - Arrays
-│       ├── 📁 08 - Funções
-│       ├── 📁 09 - Objetos
-│       ├── 📁 10 - Valores primitivos e valores por referência
-│       └── 📁 Exercícios
-│           ├── 📁 Cadastro de treinos
-│           ├── 📁 functionArrayObjects
-│           └── 📁 Revisão Geral
-│               ├── 📁 Mini Projeto 1 - Gerador de Desafios Dev
-│               ├── 📁 Mini Projeto 2 - Cadastro
-│               └── 📁 Mini Projeto 3 - Painel de Desafios Dev
-│
-├── 📁 Praticando
-│   ├── 📄 praticaChat_1_2_3-4-5-6.js
-│   └── 📄 praticando-CHAT.html
-│
-├── 📁 Projetos
-│   ├── 📁 00 - Meu Site
-│   ├── 📁 01 - Cartão de Perfil
-│   ├── 📁 02 - Tela de Login
-│   ├── 📁 03 - Página Contato
-│   ├── 📁 04 - Tabela de Planos
-│   └── 📁 05 - Página de receita
-│
-└── README.md
+Curso FullStack/
+├── 01-HTML/
+│   ├── 02 - Box_Model/
+│   ├── 03 - Lista_Menus/
+│   ├── 04 - Tabelas_HTML/
+│   └── 05 - Formulários_InputsHTMLS/
+├── 02-CSS/
+│   ├── 01 - Seletores do CSS/
+│   ├── 02 - Position/
+│   └── 03 - Flexbox/
+├── 03-JavaScript/
+│   ├── 01-JavaScript-Basico/
+│   │   ├── 01-console-log/
+│   │   ├── 02-variaveis/
+│   │   ├── 03-dados-primitivos/
+│   │   ├── 04-operadores/
+│   │   ├── 05-strings/
+│   │   ├── 06-numbers/
+│   │   ├── 07-arrays/
+│   │   ├── 08-funcoes/
+│   │   ├── 09-objetos/
+│   │   └── 10-valores-primitivos-e-referencias/
+│   ├── 02-Logica-de-Programacao/
+│   │   ├── 01-Comparacao-e-Logicos/
+│   │   ├── 02-Short-Circuit/
+│   │   ├── 03-Switch-e-Condicionais/
+│   │   ├── 04-Desestruturacao-e-Atribuicao/
+│   │   ├── 05-For/
+│   │   ├── 06-While-e-Do-While/
+│   │   └── 07-Outros-Conceitos/
+│   ├── 03-DOM/
+│   │   └── 04-Exercicios/05-Pratica/NodeList/
+│   ├── 04-Exercicios/
+│   │   ├── JavaScript-Basico/
+│   │   └── Logica/
+│   └── 05-Pratica/
+│       ├── JavaScript-Basico/
+│       └── Logica/
+├── 04-Projetos/
+│   ├── 01 - Meu Site/
+│   ├── 02 - Cartão de Perfil/
+│   ├── 03 - Tela de Login/
+│   ├── 04 - Página Contato/
+│   ├── 05 - Tabela de Planos/
+│   ├── 06 - Página de receita/
+│   ├── 07 - Dashboard de Estudos/
+│   ├── 08 - Gerador desafio/
+│   ├── 09 - Landing Page de Produto/
+│   └── 10 - Calculadora IMC/
+├── 05-Desafios/
+│   ├── 01 - Function Calculadora/
+│   ├── 02 - Classificador/
+│   ├── 03 - Validação + DOM/
+│   └── 04 - Simulador de compra/
+└── readme.md
 ```
 
 > 📌 A estrutura é atualizada conforme novos conteúdos e projetos são desenvolvidos.
