@@ -44,10 +44,6 @@ form.addEventListener('submit', function (e) {
     bttConfirma.hidden = true
     bttProxima.hidden = false
 
-      if (finalizaQuiz) {
-        return
-    }
-
     desmarcarAlternativa()
 
 })
@@ -59,47 +55,18 @@ bttProxima.addEventListener('click', function (e) {
     bttConfirma.hidden = false
     bttProxima.hidden = true
 
-    validaPergunta()    
+    
+    validaPergunta()   
+
+    if (finalizaQuiz) {
+      return
+  }
+
     mostrarPergunta()
+console.log(finalizaQuiz);
 
 })
 
-
-function proximaPergunta (){
-
-}
-function removeVida() {
-
-    for (let i = vidaCheia.length - 1; i >= 0; i--) {
-
-        if (vidaCheia[i].classList.contains('fa-solid')) {
-            vidaCheia[i].classList.replace('fa-solid', 'fa-regular')
-            break
-        }
-    }
-
-    const vidaRestantes = Array.from(vidaCheia).filter(vida => vida.classList.contains('fa-solid'))
-
-    if (vidaRestantes.length === 0) {
-        finalizaQuiz = true
-        mensagemFinalPerdeuVidas()
-    }
-
-
-}
-
-function mostrarPergunta() {
-    areaPergunta.style.display = 'flex'
-    areaBoasVindas.style.display = 'none'
-    numPergunta.innerText = `${indiceAtual + 1} de ${embaralhaPerguntas(perguntas).length}`
-    numPontuacao.innerText = `${pontuacao} Pontos`
-    textoPergunta.innerText = perguntasEmbaralhadas[indiceAtual].pergunta
-
-    for (let i = 0; i < textoAlternativas.length; i++) {
-        textoAlternativas[i].textContent = " " + perguntasEmbaralhadas[indiceAtual].alternativas[i]
-    }
-
-}
 
 function embaralhaPerguntas(perguntas) {
 
@@ -115,16 +82,17 @@ function embaralhaPerguntas(perguntas) {
     return selecionaDezPerguntas
 }
 
-function validaPergunta() {
+function mostrarPergunta() {
+    areaPergunta.style.display = 'flex'
+    areaBoasVindas.style.display = 'none'
+    numPergunta.innerText = `${indiceAtual + 1} de ${embaralhaPerguntas(perguntas).length}`
+    numPontuacao.innerText = `${pontuacao} Pontos`
+    textoPergunta.innerText = perguntasEmbaralhadas[indiceAtual].pergunta
 
-    if (indiceAtual >= perguntasEmbaralhadas.length - 1) {
-        finalizaQuiz = true
-        mensagemFinal()
-        return
-
-    } else {
-        indiceAtual++
+    for (let i = 0; i < textoAlternativas.length; i++) {
+        textoAlternativas[i].textContent = " " + perguntasEmbaralhadas[indiceAtual].alternativas[i]
     }
+
 }
 
 function alternativaMarcada() {
@@ -134,23 +102,6 @@ function alternativaMarcada() {
     return alternativas.indexOf(alternativaMarcada)
 
 }
-
-function desmarcarAlternativa() {
-    const desmarcarAlternativa = document.querySelector('input[name="alternativa"]:checked')
-
-    if (desmarcarAlternativa) {
-        desmarcarAlternativa.checked = false
-    }
-}
-
-function limpaCoresAlternativas() {
-    const alternativas = document.querySelectorAll('label')
-    
-    alternativas.forEach(alternativa => {
-        alternativa.classList.remove('resposta-correta', 'resposta-incorreta')
-    })
-}
-
 
 function verificaResposta(respostaMarcada, respostaCorreta) {
 
@@ -173,6 +124,54 @@ function verificaResposta(respostaMarcada, respostaCorreta) {
     }
 
     return alternativaCorreta, alternativaMarcada
+}
+
+function validaPergunta() {
+
+    if (indiceAtual >= perguntasEmbaralhadas.length - 1) {
+        finalizaQuiz = true
+        mensagemFinal()
+        return
+
+    } else {
+        indiceAtual++
+    }
+}
+
+function desmarcarAlternativa() {
+    const desmarcarAlternativa = document.querySelector('input[name="alternativa"]:checked')
+
+    if (desmarcarAlternativa) {
+        desmarcarAlternativa.checked = false
+    }
+}
+
+function limpaCoresAlternativas() {
+    const alternativas = document.querySelectorAll('label')
+    
+    alternativas.forEach(alternativa => {
+        alternativa.classList.remove('resposta-correta', 'resposta-incorreta')
+    })
+}
+
+function removeVida() {
+
+    for (let i = vidaCheia.length - 1; i >= 0; i--) {
+
+        if (vidaCheia[i].classList.contains('fa-solid')) {
+            vidaCheia[i].classList.replace('fa-solid', 'fa-regular')
+            break
+        }
+    }
+
+    const vidaRestantes = Array.from(vidaCheia).filter(vida => vida.classList.contains('fa-solid'))
+
+    if (vidaRestantes.length === 0) {
+        finalizaQuiz = true
+        mensagemFinalPerdeuVidas()
+    }
+
+
 }
 
 function mensagemFinal() {
@@ -205,9 +204,13 @@ function reiniciarQuiz() {
     // 3. Carrega a primeira pergunta na tela
     // (Substitua pelo nome da função que você usa para renderizar as perguntas na tela)
     desmarcarAlternativa()
+    limpaCoresAlternativas()
+
+    
+    bttConfirma.hidden = false
+    bttProxima.hidden = true
+
     perguntasEmbaralhadas = embaralhaPerguntas(perguntas)
     mostrarPergunta()
-
-
 
 }
