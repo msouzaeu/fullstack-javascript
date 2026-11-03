@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #492345;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-area {
+    text-align: center;
+    background-color: #602749;
+    width: 90%;
+    max-width: 700px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    padding: 50px;
+    gap: 30px;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+#area-dificuldade {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #ce459780;
+
+}
+
+.btt-dificuldade {
+    width: 100%;
+    border-radius: 8px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.btt-dificuldade:hover {
+    cursor: pointer;
+}
+
+.selecionado {
+    background-color: #F6921D;
+}
+
+button {
+    font-size: 20px;
+}
+
+#btt-desafio {
+    background-color: #F6921D;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 250px;
+    margin: 10px 0;
+
+}
+
+#exibe-desafio {
+    background-color: #ce459780;
+    border-radius: 8px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+    height: 200px;
+}
+
+.desafio-gerado {
+    background-color: #ce459780;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-desafio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 417px) {
+
+    .container-area {
+      
+        padding: 10px;
+      
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    #area-dificuldade {
+        margin-bottom: 30px;
+
+    }
+
+    .btt-dificuldade {
+        font-size: 1rem;
+        padding: 3px;
+    }
+
+    #exibe-desafio,
+    #info-desafio {
+        font-size: 15px;
+    }
+
+    #btt-desafio {
+        padding: 5px;
+        width: 200px;
+
+    }
+
+}

@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: #23141E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container-quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2D1623;
+    max-width: 700px;
+    height: auto;
+    padding: 50px;
+    gap: 30px;
+}
+
+
+#topo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.span-titulo {
+    color: #F38C2C;
+}
+
+#info-quiz {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: start;
+}
+
+.caixa-info-quiz {
+    background-color: #3C1E2E;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone-destaque {
+    font-size: 30px;
+}
+
+.span-info-quiz {
+    display: block;
+}
+
+.fa-circle-question {
+    color: gray;
+}
+
+.fa-trophy {
+    color: orange;
+}
+
+.fa-heart {
+    color: red;
+}
+
+
+
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+#area-pergunta {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3C1E2E;
+    height: 85%;
+    padding: 20px;
+    gap: 15px;
+}
+
+#num-pergunta {
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    background-color: #F38C2C;
+    color: #563145;
+    font-weight: bold;
+}
+
+#texto-pergunta {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 500px;
+    height: 40px;
+}
+
+.texto-alternativa {
+    margin-left: 5px;
+}
+
+form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+label {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: #2D1623;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+}
+
+input[type="radio"]:checked {
+    background-color: #F38C2C;
+    border: 1px solid rgba(255, 255, 0, 0.164);
+}
+
+.resposta-correta {
+    background-color: #14f32798;
+
+}
+
+.resposta-incorreta {
+    background-color: #f3141498
+}
+
+/* Muda a cor do texto para escuro quando selecionado, melhorando o contraste
+:has() - faz com que o label mude de cor para laranja (#F38C2C) assim que o input dentro dele for selecionado */
+
+
+label:hover {
+    background-color: #F38C2C;
+}
+
+#btt-confirma, #btt-proxima {
+    height: 40px;
+    border-style: none;
+    background-color: #F38C2C;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#area-alerta {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: yellow;
+    background-color: rgba(255, 0, 0, 0.445);
+}
+
+#area-boas-vindas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3C1E2E;
+    height: 13%;
+    gap: 20px;
+    padding: 15px;
+}
+
+#btt-comecar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 40px;
+    border-style: none;
+    background-color: #F38C2C;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#area-retorno-final {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3C1E2E;
+    height: 13%;
+    gap: 20px;
+    padding: 15px;
+}
+
+#btt-recomecar {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 40px;
+    border-style: none;
+    background-color: #F38C2C;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+@media (max-width: 606px) {
+
+    #container-quiz {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    #info-quiz {
+        height: 40px;
+        gap: 10px;
+    }
+
+    .caixa-info-quiz {
+        background-color: #3C1E2E;
+        padding: 10px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .icone-destaque {
+        font-size: 20px;
+    }
+
+
+}

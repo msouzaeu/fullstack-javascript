@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Desafios Dev</title>
+
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <section class="container-area">
+        <header class="titulo">
+            <h1>Gerador de Desafios Dev</h1>
+            <p> Pratique programação resolvendo desafios.</p>
+        </header>
+
+        <main>
+                <div id="area-dificuldade">
+                    <button id='todas-dificuldades' class="btt-dificuldade selecionado"  type="button">Todas</button>
+                    <button id='facil' class="btt-dificuldade" type="button">Fácil</button>
+                    <button id='intermediario' class="btt-dificuldade" type="button">Intermediário</button>
+                    <button id='dificil' class="btt-dificuldade" type="button">Difícil</button>
+                </div>
+            
+                <div id="exibe-desafio">
+                    Seu desafio aparecerá aqui
+                </div>
+
+                <button id="btt-desafio" type="button">
+                    Gerar desafio
+                </button>
+
+                <div id="info-desafio"></div>
+        </main>
+    </section>
+    <script type="module" src="assets/script/gera-desafio.js"></script>
+</body>
+
+</html>

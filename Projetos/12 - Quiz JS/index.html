@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JS</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <script src="https://kit.fontawesome.com/7a38d32aba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="container-quiz">
+
+        <header id="topo">
+            <div id="cabecalho">
+                <h1>Quiz <span class="span-titulo">JavaScript</span></h1>
+                <p>Teste seus conhecimentos e evolua como dev!</p>
+            </div>
+
+            <div id="info-quiz">
+                <div id="contador-pergunta" class="caixa-info-quiz "> <i
+                        class="fa-regular fa-circle-question icone-destaque "></i>
+                    <p>Pergunta<span id="span-contador-pergunta" class="span-info-quiz"></span></p>
+                </div>
+
+                <div id="pontuacao" class="caixa-info-quiz ">
+                    <i class="fa-solid fa-trophy icone-destaque"></i>
+                    <p>Pontuação<span id="span-pontuacao" class="span-info-quiz">0 Pontos</span></p>
+                </div>
+
+                <div id="vidas" class="caixa-info-quiz ">
+                    <i class="fa-solid fa-heart icone-destaque"></i>
+                    <p>Vidas<span id="span-vidas" class="span-info-quiz">
+                            <i class="fa-solid fa-heart remove-vida"></i>
+                            <i class="fa-solid fa-heart remove-vida"></i>
+                            <i class="fa-solid fa-heart remove-vida"></i>
+                        </span></p>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <div id="area-boas-vindas">
+                <h3>Seja muito bem-vindo! 📚<br> Este é o momento de colocar o seu aprendizado em prática. Leia cada
+                    alternativa com calma.<br> Desejamos uma excelente jornada e muita boa sorte! ✨</h3>
+                <button id="btt-comecar">Começar</button>
+
+            </div>
+            <div id="area-pergunta">
+                <div id="texto-pergunta"></div>
+
+                <form id="form">
+                    <!-- Alternativa A -->
+                    <label>
+                        <input type="radio" name="alternativa" value="A" id="alternativa-a">A) <span
+                            class="texto-alternativa"></span>
+                    </label>
+                    <!-- Alternativa B -->
+                    <label>
+                        <input type="radio" name="alternativa" value="B" id="alternativa-b">B) <span
+                            class="texto-alternativa"></span>
+
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <label>
+                        <input type="radio" name="alternativa" value="C" id="alternativa-c">C) <span
+                            class="texto-alternativa"></span>
+
+                    </label>
+
+                    <!-- Alternativa D -->
+                    <label>
+                        <input type="radio" name="alternativa" value="D" id="alternativa-d">D) <span
+                            class="texto-alternativa"></span>
+
+                    </label>
+
+                    <button type="submit" id="btt-confirma">Confirmar resposta</button>
+                    <button type="button" id="btt-proxima" hidden>
+                        Próxima pergunta
+                    </button>
+
+                    <div id="area-alerta"></div>
+                </form>
+
+            </div>
+
+            <section id="area-retorno-final">
+                <div id="mensagem-final"></div>
+                <button type="button" id="btt-recomecar">Começar novamente</button>
+            </section>
+
+        </main>
+    </section>
+
+    <script src="assets/script/quiz.js" type="module"></script>
+</body>
+
+</html>
