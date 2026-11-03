@@ -250,8 +250,11 @@ label:hover {
 
 @media (max-width: 450px) {
   
+    #container-quiz {
+        padding: 10px;
+    }
     #area-pergunta{
-        max-width: 450px;
+        max-width: 100%;
     }
 
     #area-pergunta h3{
