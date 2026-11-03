@@ -55,15 +55,15 @@ bttProxima.addEventListener('click', function (e) {
     bttConfirma.hidden = false
     bttProxima.hidden = true
 
-    
-    validaPergunta()   
+    validaPergunta()
+
 
     if (finalizaQuiz) {
-      return
-  }
+        return
+    }
 
     mostrarPergunta()
-console.log(finalizaQuiz);
+    console.log(finalizaQuiz);
 
 })
 
@@ -85,8 +85,7 @@ function embaralhaPerguntas(perguntas) {
 function mostrarPergunta() {
     areaPergunta.style.display = 'flex'
     areaBoasVindas.style.display = 'none'
-    numPergunta.innerText = `${indiceAtual + 1} de ${embaralhaPerguntas(perguntas).length}`
-    numPontuacao.innerText = `${pontuacao} Pontos`
+    numPergunta.innerText = `${indiceAtual + 1} de ${perguntasEmbaralhadas.length}`
     textoPergunta.innerText = perguntasEmbaralhadas[indiceAtual].pergunta
 
     for (let i = 0; i < textoAlternativas.length; i++) {
@@ -110,6 +109,7 @@ function verificaResposta(respostaMarcada, respostaCorreta) {
 
     if (respostaMarcada === respostaCorreta) {
         pontuacao = pontuacao + 10
+        numPontuacao.innerText = `${pontuacao} Pontos`
         alternativaCorreta.classList.add('resposta-correta')
 
 
@@ -148,7 +148,7 @@ function desmarcarAlternativa() {
 
 function limpaCoresAlternativas() {
     const alternativas = document.querySelectorAll('label')
-    
+
     alternativas.forEach(alternativa => {
         alternativa.classList.remove('resposta-correta', 'resposta-incorreta')
     })
@@ -193,6 +193,8 @@ function reiniciarQuiz() {
     // 1. Reseta as variáveis de controle para o estado inicial
     indiceAtual = 0;
     pontuacao = 0; // Altere para o nome exato da sua variável de pontuação
+    numPontuacao.innerText = `${pontuacao} Pontos`
+
     finalizaQuiz = false;
     // 2. Limpa a tela de resultado e exibe o formulário de perguntas novamente
     for (let i = vidaCheia.length - 1; i >= 0; i--) {
@@ -206,7 +208,7 @@ function reiniciarQuiz() {
     desmarcarAlternativa()
     limpaCoresAlternativas()
 
-    
+
     bttConfirma.hidden = false
     bttProxima.hidden = true
 
