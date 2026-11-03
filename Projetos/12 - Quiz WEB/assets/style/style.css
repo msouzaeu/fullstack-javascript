@@ -267,14 +267,14 @@ label:hover {
     }
 
     #info-quiz .remove-vida{
-        font-size: 9px;
+        font-size: 14px;
     }
 
     .caixa-info-quiz {
         background-color: #3C1E2E;
         padding: 10px;
         gap: 10px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .icone-destaque {
